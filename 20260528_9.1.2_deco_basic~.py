@@ -124,6 +124,7 @@ def log_func(details=True):
     #Q.つまり@()の時点で一度一番外側が実行されるの？
     #＠（）⇒log_func()⇒def hoge生成⇒hoge=inner???
     #少し流れが違う気がする。
+    #A.@の後ろがカッコ付きだから先に実行して、帰ってきた関数を@にセット（待機）させてから下の行に進む
     def outer(func):
         def inner(*args, **keywds):
             print('--------------------')
