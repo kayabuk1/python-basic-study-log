@@ -7,9 +7,9 @@ adc = ADC()
 #print(adc)
 #<class 'grove.adc.ADC'>
 #<grove.adc.ADC object at 0x7fb63d7a10>
-#このオブジェクトabcは一体どんなオブジェクトなのだ？
+#このオブジェクトadcは一体どんなオブジェクトなのだ？
 #こいつにA2ピンの操作をメソッドとしてさせても良いのか？
-#新たにabcオブジェクトを生成しなくて良いのだろうか？
+#新たにadcオブジェクトを生成しなくて良いのだろうか？
 #でもそれはなぜ？
 '''
 adc = ADC() という実体は、「Raspberry Piから見て、Grove Base Hatの
