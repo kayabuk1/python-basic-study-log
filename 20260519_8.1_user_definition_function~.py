@@ -32,41 +32,98 @@ print(dir(get_triangle))
 import types
 # types道具箱の中にある 'FunctionType' という名前の設計図を取り出す
 print(dir(types.FunctionType))
-
+print(types.FunctionType)
+#<class 'function'>
+# types モジュールは、Pythonのシステム内部で使われている様々な
+#「型（クラス）」の設計図が入った道具箱です。
+#ここで FunctionType という「ユーザー定義関数を作るための大元の設計図」を
+#取り出し、dir() に放り込んでいます。
+#dir() はオブジェクトの裏側に隠された属性（機能）を全て暴くスキャナーです。
+#これを実行すると、__name__（関数の名前）、__doc__（docstring）、
+#__code__（バイトコードの実体）、__globals__（グローバル空間への参照）など、
+#おびただしい数の裏パラメータが出現します。
+# つまり、**「Pythonの関数はただの処理の塊ではなく、これほど多くの設定パラメータを
+#抱え込んだ『第一級オブジェクト（実体を持った部品）』なのです。
 
 #%% 8.1.4 戻り値 return命令
 def show_current():
     import datetime
     print(datetime.datetime.now())
 print(show_current())
-print(show_current)
-print(type(show_current))
-print(type(show_current()))
 #2026-05-19 15:14:22.172894
 #None
+#()でshow_currentが実行⇒時刻表示。戻り値は無いので外側printはNoneを出力
+print(show_current)
 #<function show_current at 0x0000021E7F5F16C0>
+#show_current という名札がくっついているオブジェクトそのものを見せろ」という命令。
+#（メモリ上のこの番地にある関数ですよ）という設計図の実体が表示。
+print(type(show_current))
 #<class 'function'>
+#関数オブジェクトそのものです。そのため型は <class 'function'>
+print(type(show_current()))
 #2026-05-19 15:18:05.700817
 #<class 'NoneType'>
+#関数は None を返します。つまり、これは type(None)
+#None の型は NoneType なので、<class 'NoneType'> が出力。
+
+#None 関数内にreturnが無い場合はNoneを返すと定められている。
+#⇒これ何か理由があったけ？オブジェクトそのもの弄る関数?
+#  メソッドは戻り値がNoneでチェーンが出来ないようにしているのだっけ？
+#公式ドキュメント（7.1. 式文）には、有意な結果を返さない関数のことを
+#「プロシジャ（procedure）」と呼び、**「Python では、プロシジャは
+#値 None を返します」**と定義されています。
 
 import datetime
 print(datetime)
+#<module 'datetime' 
+#from 'C:\\ProgramData\\spyder-6\\envs\\spyder-runtime\\Lib\\datetime.py'>
+#datetime.py というファイル（モジュールオブジェクト）」そのもの。
 print(type(datetime))
+#<class 'module'>
 print(type(datetime.datetime))
+#モジュールの中にある datetime クラス。
+#型が <class 'type'> と出たのが最大のポイント。
+#Pythonにおいて、**型が type と表示されるものは「クラスの神様（設計図そのもの）」**を意味する。
+#datetime型というのがピンと来ないけれど、int型そのものを見た様なものだよね？
 print(datetime.datetime)
+#<class 'datetime.datetime'>　datetime型（クラス）は当然datetime型
 print(type(datetime.datetime.now))
+#<class 'builtin_function_or_method'>
+#クラスの中にある now という機能。
+#この機能がPythonで書かれたものではなく、C言語でゴリゴリに実装された
+#超高速な「組み込みメソッド」であることを示しています。
 print(datetime.datetime.now)
+#<built-in method now of type object at 0x00007FFEC27F2FC0>
+#「私はメモリ上のこの番地に鎮座している、クラスの神様に属する『now』という組み込みメソッドの実体です。
 print(dir(datetime.datetime))
+#['__add__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__radd__', '__reduce__', '__reduce_ex__', '__repr__', '__rsub__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__',
+#'astimezone', 'combine', 'ctime', 'date', 'day', 'dst', 'fold', 'fromisocalendar',
+#'fromisoformat', 'fromordinal', 'fromtimestamp', 'hour', 'isocalendar', 'isoformat',
+#'isoweekday', 'max', 'microsecond', 'min', 'minute', 'month', 'now', 'replace', 'resolution',
+#'second', 'strftime', 'strptime', 'time', 'timestamp', 'timetuple', 'timetz', 'today',
+#'toordinal', 'tzinfo', 'tzname', 'utcfromtimestamp', 'utcnow', 'utcoffset', 'utctimetuple',
+#'weekday', 'year']
+#かなり多くの属性？とメソッドが用意されている。
+#⇒メソッドと属性の区別はどう付けるの？
+#【結論】 dir() が出力した「ただの文字列のリスト」を見ただけでは、人間もシステムも絶対に区別できません！
+#公式ドキュメント（9. クラス）には、非常に重要な真理が書かれています。 
+#「有効な 属性名 には (データ属性およびメソッドの) 二種類あります」
+#「メソッドとは、オブジェクトに "属する" 関数のことです」
+#つまり、Pythonのアーキテクチャにおいては、
+#**「メソッドも、単に『関数オブジェクト』というデータが代入されているだけの属性の1つに過ぎない」
+#**のです！ dir() は、「そのモジュールやクラスが持っている名札（属性名）の文字列をソートして列挙する」
+#だけのスキャナーです。そのため、名札の裏に「文字や数字」が入っているのか、「実行できる関数」が
+#入っているのかは、列挙された名前を見ただけではわかりません。
+#■ プロはどうやって区別するのか？
+#本当に区別したい場合は、実際にその属性を取り出してみて、システムに直接問い合わせるしかありません。
+#callable(datetime.datetime.now) （カッコをつけて実行可能か？）とシステムに聞いて、
+#True が返ってくればメソッド、False ならただのデータ属性だ、と仕分けるのがシステムの裏側のアプローチです。
 print(dir(datetime.datetime.)
-'''
-<module 'datetime' from 'C:\\ProgramData\\spyder-6\\envs\\spyder-runtime\\Lib\\datetime.py'>
-<class 'module'>
-<class 'type'>
-<class 'datetime.datetime'>
-<class 'builtin_function_or_method'>
-<built-in method now of type object at 0x00007FFEC27F2FC0>
-'''
-
+#SyntaxError: invalid syntax
+#    print(dir(datetime.datetime.)
+                                #
+#⇒これはなぜエラー？
+#（パーサー）が「ドット . の次に来るはずの名前」を待ち構えたまま梯子を外されてパニックを起こしたからです！
 #%%　練習問題5
 '''
 次の各関数について、定義の1行目に記述する内容と、戻り値がある場合は望ましいデータ型を答えよ。なお、データ型は「int、float、str、bool」の4つの型、リスト・ディクショナリ・タプル・セットから選びなさい。
@@ -271,11 +328,29 @@ def analze_scores(sansu,kougo,rika,syakai,eigo=None,*others):
 #③ 代入のコンテキストにおける * ＝ 【星付きターゲット（拡張アンパック代入）】
 #   代入文（=）の左側で使われた場合、システムはこれを「代入先の
 #   特殊な受け皿（星付きターゲット）」として認識します
-#    aには1が、cには4が入り、残った [4, 8] がすべて b という「リスト」にパッキングされる！
+#    aには1が、cには9が入り、残った [4, 8] がすべて b という「リスト」にパッキングされる！
 #   a, *b, c = [3, 4, 8, 9] 
 #   この機能はインフラ実務でのログ解析（「最初のIPアドレスと、最後のステータスコードだけ
 #   変数に入れて、真ん中の可変長なメッセージは全部リストにまとめておきたい」といった
 #   処理）で狂ったように多用されます。
+#◆公式ドキュメント（7.2. 代入文）の「星付きターゲット」のルールには、
+スロットの割り当て方についてこう書かれています：
+「星付きのターゲットより前のターゲットに、イテラブルの先頭の要素が左から右へ代入されます。
+星付きのターゲットより後ろのターゲットに、イテラブルの末尾の要素が代入されます。」
+「星付きのターゲットに、イテラブルの残った要素のリストが代入されます (リスト空でもかまいません)。」
+つまり、システムは裏側で次のように仕分け作業を行います。
+a（星より前）：左端の先頭要素を1つ取る ➔ a = 3
+c（星より後ろ）：右端の末尾要素を1つ取る ➔ c = 9 
+*b（星付き）：先頭と末尾に取られて「残った真ん中の要素すべて」を回収する ➔ b = [4,8]
+◆なぜ同じ * なのに、関数ではタプルになり、代入文ではリストになるのか？
+これは、システムの設計思想（アーキテクチャの目的）の違いです。
+関数の *args （タプル）: 関数に渡された引数は、関数の中で勝手に書き換えられては困る
+「保護されるべき入力データ」です。だからこそ、変更不可のカプセルである「タプル」としてパッキングします。
+代入文の *b （リスト）: 一方、ログ解析などで変数にデータを切り分けた後、
+プログラマはそのまとめたデータに対して「検索」や「追加・削除（不要なログの除外など）」の
+処理をしたいことがほとんどです。だからこそ、後から変更可能な「リスト」としてパッキングしてあげるのです。
+	関数の *args ＝ 保護のための タプル。
+	アンパック代入の *b ＝ 加工のための リスト。
 """
 この関数を呼び出すときに、少なくとも算数、国語、理科、社会、英語の5教科の点数を
 引数として与えなければならない
