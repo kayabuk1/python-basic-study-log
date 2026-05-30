@@ -7,19 +7,84 @@ Created on Tue May 19 12:48:51 2026
 #%% 7.4.3 JSONデータを取得する
 import requests
 res = requests.get('http://wings.msn.to/tmp/books.json')
+#requestsモジュールの部屋から get という通信用の道具（関数）を取り出し、URLを渡して実行します。
+#この関数は、Webサーバーと通信を行い、返ってきた結果
+#（ステータスコード、生のテキスト、通信ヘッダーなど）を全て1つのカプセルに詰め込んだ
+#**「Responseオブジェクト（実体）」**を生成しします。それに res という名札を付けます。
 bs = res.json()
+#res オブジェクトが持っている json() という機能（メソッド）を実行しています。
+#Webから送られてくるJSONデータは、システムにとってはただの「単なる文字列（テキスト）」
+#にすぎません。json() メソッドは、この文字列を構文解析し、Pythonが扱いやすい
+#**「辞書（ディクショナリ）とリストの組み合わせ」へと自動的に変換（デシリアライズ）**してくれます
+#変換後の辞書オブジェクトに bs という名札を付けています。
+#⇒pythonには型、クラスが無数に存在するから、wgetしたデータがresponesオブジェクトで、
+#  .json()メソッドを持っているし、使わないとな。という風に使える様になるにはどうしたら良い？
+#  たとえ、resoponseオブジェクトの処理のテンプレは覚えても他のクラスやメソッドはどう型に嵌めて
+#  覚えたら良いのだろうか？
+'''
+1.「お前は誰だ？」と尋ねる ➔ print(type(res)) 
+    「なるほど、お前は <class 'requests.models.Response'> というクラスから生まれた実体だな」と特定。
+2.「お前は何ができるんだ？」と尋ねる ➔ print(dir(res)) 
+    「おっ、レントゲンスキャンしたら .json や .text、.status_code なんていう機能（メソッドや属性）
+    を持っているじゃないか」と使える武器を一覧化します。
+3.「どうやって使うんだ？」と尋ねる ➔ help(res.json) （対話モードなどで）
+    help() 関数に放り込んで、そのメソッドの公式な説明書（docstring）を直接読み込みます。
+この「type(), dir(), help()」の3種の神器を使えば、どんな未知のライブラリの、
+どんな未知のクラスが返ってきても、その場で使い方を解読できるようになります。
+'''
 print(bs)
+#%runfile 'D:/python/20260519_7.4.3_http_json~.py' --wdir
+#辞書型に変換されたデータの中身全体を画面に出力します。
+#⇒runfile＝実行ファイル？、--wdirとは？
+#%runfile ＝ 「今から指定するパスのPythonファイルを、まるごと実行しろ！」
+#というIPython専用の命令（% で始まるのはマジックコマンドと呼ばれます）。
+#--wdir ＝ 「Working Directory（作業ディレクトリ）」の略です。
+#「実行する時のカレントディレクトリ（現在位置）を、ファイルの場所と同じに設定してね」というオプション。
 print(bs['books'][0]['title'])
-    #KeyError: 'book'
-    #%runfile 'D:/python/20260519_7.4.3_http_json~.py' --wdir
-    #独習Java 新版
+#独習Java 新版
+#変換された辞書・リストから、ピンポイントでデータを抽出しています。
+#① bs['books'] ➔ 辞書の中から books というキーで「リスト」を取り出す。
+#② `` ➔ そのリストの「0番目（最初）の要素（これも辞書）」を取り出す。
+#③ ['title'] ➔ その辞書の中から `title` というキーの値を取り出す。 
+#結果として、 `'独習Java 新版'` という文字列が抽出され、出力されます。
+#⇒これリストが[[[]]]三重になっているのか？なぜそんな面倒くさい構造に？
+#「世界中のどんな複雑なデータも、たった2つの型（辞書とリスト）の組み合わせだけで表現する」
+#というJSONのアーキテクチャだから。
+# これが生データ（res.text）の正体です。
+# 両端がシングルクォートで囲まれた、ただの「1つの文字列（str型）」です。
+
+'{"books": [{"title": "独習Java 新版", "price": 2980}, {"title": "独習Python", "price": 3300}]}'
+# 取得した bs の本当の姿（.json() メソッドを実行した「後」のPython専用オブジェクト（辞書とリスト）の姿）
+{ # ① 一番外側は「辞書（ディクショナリ）」
+    'books': [ # ② 'books' というキーの中身は、複数の本を格納する「リスト（配列）」
+        { # ③ リストの0番目（1冊目の本）。これはまた「辞書」になっている
+            'title': '独習Java 新版', # ④ その辞書の 'title' というキー
+            'price': 2980
+        },
+        { # リストの1番目（2冊目の本）...
+            'title': '独習Python',
+            'price': 3300
+        }
+    ]
+}
 print(requests.get)
 print(requests)
-    #<function get at 0x0000021E7F439300>
-    #<module 'requests' from 'C:\\ProgramData\\spyder-6\\envs\\spyder-runtime\\Lib\\site-packages\\requests\\__init__.py'>
+#<function get at 0x0000021E7F439300>
+#<module 'requests' from 
+# 'C:\\ProgramData\\spyder-6\\envs\\spyder-runtime\\Lib\\site-packages\\requests\\__init__.py'>
+#⇒paizeで実行して結果見ようとしたら、
+#Traceback (most recent call last):
+#  File "/workspace/Main.py", line 2, in <module>
+#    import requests
+#ModuleNotFoundError: No module named 'requests'
 print(res.text)
+#Webサーバーから送られてきた「生のJSON文字列」がそのまま入っています。
 print(res.json)
+# <bound method Response.json of <Response>？
 print(type(res))
+#<class 'requests.models.Response'> となります。
+#「これはただの文字列や辞書ではなく、Requestsモジュール専用に作られた
+#『Responseクラス』のインスタンスである。
 print(dir(res))
 print(dir(requests))
 
