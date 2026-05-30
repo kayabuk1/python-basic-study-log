@@ -21,6 +21,22 @@ for line in read_files(
         './schap09/sample3.dat'):
     print(line)
 '''
+20260529自力トレースもう一度。
+def read_files設計図登録⇒def read lines設計図登録⇒for line in read_files()実行
+⇒read_files()gen生成実行⇒for file in files実行filesタプルからfileを一つ取り出す
+⇒yield from read_lines(file)fileを引数に渡してread_lines()gen生成、実行
+⇒path=file=相対パスにして、fileを読み取り専用で開く右for line in file実行
+⇒line.rstrip()実行rは何の略？\nを削除⇒yield⇒global line = local line?になって
+⇒print(line)で一行表示⇒まだsample1.datに行があれば続行？EOF？が出るまで何を目印にしているんだろう。
+⇒兎も角ファイルから全行表示するまで繰り返す。
+A. r は「Right（右側）」の略。 strip（ストリップ）には「はぎ取る、剥がす」という意味。
+   lstrip() や、両端からはぎ取る strip() もある。
+A.システムの裏側で発生する「品切れアラーム（StopIteration 例外）」を目印にforを続ける。
+  それまでは、forがnext() を連打する。
+A.1行ごとのループ中: メインループ ⇄ 下請け工場 (read_lines) の間で直接キャッチボール。親工場はフリーズ。
+ファイル終了時 (EOF): 下請けが投げた StopIteration を yield from が吸収。ここで初めて親が動いて次のファイルへ。
+全ファイル終了時: 親工場自身が StopIteration を投げ、メインループがそれを吸収して終了。
+20260529
 自力でプログラム実行の流れを書いてみる。
 for line in read_files():でgeneratorが生成され、
 next()?が押され実行される。
