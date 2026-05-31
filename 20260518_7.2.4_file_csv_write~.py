@@ -286,8 +286,15 @@ for path,dirs,files in os.walk('./python'):
         if f.endswith('.txt'):
             print(os.path.join(path,f))
 #./python\新規 テキスト ドキュメント.txt
+'''
+◆OSモジュールまとめ
+os モジュールの中にある関数を呼び出した瞬間、PythonはOSに対して
+**「おい！カーネル！このパスにディレクトリを作れ！」と、
+C言語レベルの『システムコール』を直接発行**しています。
+osモジュールとは、まさにPythonとOSを繋ぐための「翻訳機（システムコールへの直通パイプ）」です。
+'''
 
-#%% 7.3.4 フォルダ作成/リネーム/削除　mkdir,rename,rmdir関数
+#%% 7.3.4 フォルダ作成/リネーム/削除　mkdir,rename,rmdir関数（単層の操作）
 import os
 os.mkdir('./python/sub',mode=0o666)
 input('Hit any key...')
@@ -296,14 +303,27 @@ input('Hit any key...')
 os.rmdir('./python/copy')
 #Hit any key...
 #Hit any key...
+'''
+mkdir, rename, rmdir: 
+これらはすべて**「一番末端の1階層だけ」**を対象とする単数形のシステムコールです。
+たとえば ./python/sub/a/b を一気に作ろうとしても、途中の a が無ければエラーで弾かれます。
+'''
 
-#%% 7.3.5　複数階層でフォルダを作成/リネーム/削除する
+#%% 7.3.5　複数階層でフォルダを作成/リネーム/削除する（複数階層の再帰的操作）
 import os
 os.makedirs('./python/sub/gsub')
 input('Hit any key...')
 os.renames('./python/sub/gsub','./python/copy/gchild')
 input('Hit any key...')
 os.removedirs('./python/copy/gchild')
+'''
+makedirs, renames, removedirs:
+名前に s が付いているのが最大のポイントです！
+これはOSに対して「途中のディレクトリが存在しなければ、
+俺が全部再帰的に（一気に）作ってやる／消してやる！」という超強力な複数形コマンドです。
+インフラ構築スクリプトで深い階層のログフォルダを一発で作成する際などは、
+必ず mkdir ではなく makedirs を使います。
+'''
 
 #%% 7.3.6 フォルダと配下のフォルダ/ファイルをまとめてコピーする copytree関数
 import shutil
@@ -311,20 +331,52 @@ shutil.copytree(
     './python/doc', './python/data',
     dirs_exist_ok=True
     )
+'''
+◆なぜ osだけでなく shutil という別のモジュールがあるのか？
+shell utirity?だっけ？
+なぜコピーするだけなのに os ではなく shutil なんだ？」と思いますよね。
+実は、OSのシステムコールには「中身が詰まったフォルダを丸ごとコピーしろ」という単一の命令は存在しません。
+  osモジュール: OSのシステムコールと1対1で対応する「低水準」な部品。
+  shutilモジュール: osの機能（フォルダ作成、ファイル読み書きなど）を裏で何百回も組み合わせて、
+人間がやりたい「高水準（High-level）」な処理（丸ごとコピー、圧縮アーカイブなど）を
+1発でやってくれる**「高機能な建設重機」**です。
+dirs_exist_ok=True は、
+「もしコピー先に既に同じ名前のフォルダがあっても、エラーで止まらずに中身を上書き・統合しろ」という、
+自動化スクリプトが途中でクラッシュしないための強力な安全装置（フラグ）です。
+'''
 
-#%%# 7.4 HTTP経由でコンテンツを取得する
-# 7.4.1 requestsモジュールの基本
+#%%# 7.4 HTTP経由でコンテンツを取得する REST APIを叩くためのコード
+# 7.4.1 requestsモジュールの基本 GET通信（取得）
+#requests モジュール ＝ 面倒な通信のエンコードやヘッダー処理をすべて隠蔽し、
+#「URLと辞書」だけでネットワーク機器と対話させてくれる神ツール。
 import requests
 print(dir(requests))
 res = requests.request('get', 'https://codezine.jp', )
 print(res.text)
+'''
+request('get', ...): インターネット上のサーバーに対して「このURLのHTML（またはJSON）のデータをくれ！」
+と要求（GET）しています。通常は requests.get(...) というショートカットで書くことが多いですが、
+裏側の動きは全く同じです。
+res.text: サーバーから返ってきた「生のレスポンスデータ（ただの文字列）」が入っている属性です。
+'''
 
-#%% 7.4.2 HTTP POSTによる通信
+#%% 7.4.2 HTTP POSTによる通信（送信）
 import requests
 res = requests.post('https://wings.msn.to/tmp/post.php', 
                     data={'name':'佐々木新之助'})
 print(res.text)
     #こんにちは、佐々木新之助さん！
+'''
+post と data={...} の凄さ: 情報を「取得」するGETに対し、
+POSTはサーバーへ情報を「送信（登録・変更）」するためのコマンドです。
+ここでの最大のアーキテクチャは、送信するデータを
+Pythonの辞書（{'name':'佐々木新之助'}）として渡しているだけという点です。
+本来、インターネットで日本語を送るには、URLエンコード（%E4%BD%90...のような暗号変換）
+という非常に面倒な処理が必要です。
+しかし requests モジュールは、辞書を受け取ると
+「よし、通信規格に合わせて、裏側で俺が勝手に文字コードを変換して安全に送ってやる！」
+と、すべて全自動でやってくれています。
+'''
 
 
 
