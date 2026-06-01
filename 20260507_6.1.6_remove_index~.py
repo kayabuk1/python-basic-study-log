@@ -237,7 +237,10 @@ data2.sort()#selfを引数にするものと、引数を必要にするもの差
 print(data2)
 #data3.sort() 
     #TypeError: '<' not supported between instances of 'int' and 'str'
-    #エラーについて調べる
+    '''sort メソッドが裏側で「どちらが大きいか？」を調べるために < 演算子を使っている為。
+    Pythonでは、「文字列（str）」と「整数（int）」のように適切な比較順序のルールが存在しない
+    異なる型同士を < で比較しようとすると、システムが「比べられないぞ！」とパニックになり
+    TypeError を送出するという厳格な安全設計になっています。'''
 print(data3)
 data.sort(reverse=True)
     #ここ=の間スペース開けないのはなんで？どんな習慣？
