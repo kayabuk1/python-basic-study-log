@@ -488,7 +488,7 @@ RuntimeError: This event loop is already running
 #async def で作られた関数（コルーチン）は、普通に呼び出しても「作業指示書（コルーチンオブジェクト）」
 #がポロッと作られるだけで、中身は1ミリも動かないという非同期の動作になっている。
 r'''
-Q.そもそも async と await の文法的役割と定義がよく理解できていないと感じる。解説して欲しい。
+Q.そもそも async の文法的役割と定義がよく理解できていないと感じる。解説して欲しい。
 Q.asyncio.get_event_loop() loop.run_until_complete()
   ↑この2つの命令がどんな命令になるのか具体的に詳しく解説して欲しい。
 '''
