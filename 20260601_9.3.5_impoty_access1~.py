@@ -415,9 +415,9 @@ loop.run_until_complete() や asyncio.run() で実行するように書かれて
 トップレベルから直接 await で着火させる」というSpyder専用の正しい書き方が必要になります。
 ※Jupyter Notebookでも同じ現象が起きる。
 ※もしSpyderのコンソール上ではなく、コマンドプロンプトなどから python app.py として
-「独立したプログラム」として実行する場合は、逆にトップレベルで await は使えないため、
-一番外側だけ result = asyncio.run(heavy_process('hoge', 5)) を使う必要があります。
-Q.この トップレベル というのは何を指している？'''
+「独立したプログラム」として実行する場合は、逆にトップレベル（字下げが一切されていないプログラムの一番外側）で
+await は使えないため、一番外側だけ result = asyncio.run(heavy_process('hoge', 5)) を使う必要があります。
+'''
 result = await heavy_process('hoge', 5)
 end = time.time()
 print(result)
@@ -488,9 +488,13 @@ RuntimeError: This event loop is already running
 #async def で作られた関数（コルーチン）は、普通に呼び出しても「作業指示書（コルーチンオブジェクト）」
 #がポロッと作られるだけで、中身は1ミリも動かないという非同期の動作になっている。
 r'''
+Q.asyncio.get_event_loop() loop.run_until_complete(作業指示書コルーチンオブジェクト)とは？
+A.今、このスレッド（プロセス）を担当している現場監督（イベントループの大元締め）の連絡先（オブジェクト）を取得せよ！
+  おい現場監督（loop）！この作業指示書（コルーチンオブジェクト）が完全に終わるまで、絶対にループを止めずに実行し続けろ！
 Q.そもそも async の文法的役割と定義がよく理解できていないと感じる。解説して欲しい。
-Q.asyncio.get_event_loop() loop.run_until_complete()
-  ↑この2つの命令がどんな命令になるのか具体的に詳しく解説して欲しい。
+A.async def を使用して定義された関数やメソッドを『コルーチン関数 (coroutine function)』と呼びますと定義。
+　async とは、システムに対して「これから定義する関数は、途中で await（一時停止と主導権の返還）が
+  できる特殊な仕様の関数だぞ！」と宣言するためのマーカー（予約語）。
 '''
 # <coroutine object heavy_process at 0x000002A8F09EDC40>
 # C:\Users\iot01\AppData\Local\Temp\ipykernel_3424
@@ -512,6 +516,11 @@ r'''
 <coroutine object heavy_process at 0x000002A8F09EDC40>
 C:\Users\iot01\AppData\Local\Temp\ipykernel_3424\3917610962.py
 Q.coroutine object とは具体的にどんな風に定義されていますか？
+A.コルーチン関数が呼び出された時、そのような関数は coroutine オブジェクトを返します。
+  コルーチン関数は、呼び出しても中身は1ミリも実行されません。
+  『hoge』という名前で『5秒間』スリープするという手順が書かれた、
+  メモリ上の 0x000002A8... にある作業指示書（コルーチンオブジェクト）を発行しただけ。
+  この作業指示書は、await を使って現場監督（イベントループ）に渡して初めて、中身が実行され始めます。
 '''
 '''◆イベントループとOSのディスパッチャの違い
 イベントループはPython（1つのスレッド）の中だけで動く専用の私設ディスパッチャ。
