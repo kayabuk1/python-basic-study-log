@@ -1,0 +1,62 @@
+pi@raspberrypi:~ $ pip3 install smbus2 pyserial seeed-python-dht --break-system-packages
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: smbus2 in /usr/lib/python3/dist-packages (0.4.3)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (3.5)
+Collecting seeed-python-dht
+  Downloading https://www.piwheels.org/simple/seeed-python-dht/seeed_python_dht-0.0.2-py3-none-any.whl.metadata (3.0 kB)
+Downloading https://www.piwheels.org/simple/seeed-python-dht/seeed_python_dht-0.0.2-py3-none-any.whl (3.9 kB)
+Installing collected packages: seeed-python-dht
+Successfully installed seeed-python-dht-0.0.2
+pi@raspberrypi:~ $ git clone https://github.com/Seeed-Studio/grove.py
+Cloning into 'grove.py'...
+remote: Enumerating objects: 1874, done.
+remote: Counting objects: 100% (691/691), done.
+remote: Compressing objects: 100% (240/240), done.
+remote: Total 1874 (delta 535), reused 537 (delta 444), pack-reused 1183 (from 1)
+Receiving objects: 100% (1874/1874), 998.34 KiB | 630.00 KiB/s, done.
+Resolving deltas: 100% (1217/1217), done.
+pi@raspberrypi:~ $ cd grove.py
+pi@raspberrypi:~/grove.py $ sudo pip3 install . --break-system-packages
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Processing /home/pi/grove.py
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: smbus2 in /usr/lib/python3/dist-packages (from Seeed-grove.py==0.7) (0.4.3)
+Collecting bmm150 (from Seeed-grove.py==0.7)
+  Downloading bmm150-0.2.2-py3-none-any.whl.metadata (2.7 kB)
+Collecting bme680 (from Seeed-grove.py==0.7)
+  Downloading https://www.piwheels.org/simple/bme680/bme680-2.0.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting sgp30 (from Seeed-grove.py==0.7)
+  Downloading https://www.piwheels.org/simple/sgp30/sgp30-0.1.6-py3-none-any.whl.metadata (3.2 kB)
+Collecting RPi.GPIO (from Seeed-grove.py==0.7)
+  Downloading RPi.GPIO-0.7.1.tar.gz (29 kB)
+  Preparing metadata (setup.py) ... done
+Collecting rpi_ws281x (from Seeed-grove.py==0.7)
+  Downloading rpi_ws281x-5.0.0.tar.gz (64 kB)
+  Preparing metadata (setup.py) ... done
+Collecting enum-tools<0.10.0,>=0.9.0.post1 (from bmm150->Seeed-grove.py==0.7)
+  Downloading https://www.piwheels.org/simple/enum-tools/enum_tools-0.9.0.post1-py3-none-any.whl.metadata (7.9 kB)
+Requirement already satisfied: pygments>=2.6.1 in /usr/lib/python3/dist-packages (from enum-tools<0.10.0,>=0.9.0.post1->bmm150->Seeed-grove.py==0.7) (2.18.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/lib/python3/dist-packages (from enum-tools<0.10.0,>=0.9.0.post1->bmm150->Seeed-grove.py==0.7) (4.13.2)
+Downloading https://www.piwheels.org/simple/bme680/bme680-2.0.0-py3-none-any.whl (14 kB)
+Downloading bmm150-0.2.2-py3-none-any.whl (8.5 kB)
+Downloading https://www.piwheels.org/simple/enum-tools/enum_tools-0.9.0.post1-py3-none-any.whl (61 kB)
+Downloading https://www.piwheels.org/simple/sgp30/sgp30-0.1.6-py3-none-any.whl (7.3 kB)
+Building wheels for collected packages: Seeed-grove.py, RPi.GPIO, rpi_ws281x
+  DEPRECATION: Building 'Seeed-grove.py' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'Seeed-grove.py'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for Seeed-grove.py (setup.py) ... done
+  Created wheel for Seeed-grove.py: filename=seeed_grove_py-0.7-py3-none-any.whl size=159211 sha256=508778e09afcff946997d89a254ad5d5970cc6b1b7aa9df79e551ef52506d213
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ragahk_7/wheels/6a/c5/c8/156d10929a3f2b84a7590d7947d4fdb8c4343e9c1df4bb43a7
+  DEPRECATION: Building 'RPi.GPIO' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'RPi.GPIO'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for RPi.GPIO (setup.py) ... done
+  Created wheel for RPi.GPIO: filename=rpi_gpio-0.7.1-cp313-cp313-linux_aarch64.whl size=69285 sha256=2656581c7b75dac4750790d1cec6d329e72cae233dacd1af91c36d3c85774e9a
+  Stored in directory: /root/.cache/pip/wheels/fe/f1/d8/b4cf15eedd221009444483ab72646dee0b203f4aa2c185ec1c
+  DEPRECATION: Building 'rpi_ws281x' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'rpi_ws281x'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for rpi_ws281x (setup.py) ... done
+  Created wheel for rpi_ws281x: filename=rpi_ws281x-5.0.0-cp313-cp313-linux_aarch64.whl size=124980 sha256=c0ebb9803ec644fa3b370eb3b30f515d9010608e1998c59151b363ccc85b7e3e
+  Stored in directory: /root/.cache/pip/wheels/29/2a/12/da24aea32d3801e27e82b5c87945725b9954185b725545f3eb
+Successfully built Seeed-grove.py RPi.GPIO rpi_ws281x
+Installing collected packages: RPi.GPIO, sgp30, rpi_ws281x, enum-tools, bme680, bmm150, Seeed-grove.py
+Successfully installed RPi.GPIO-0.7.1 Seeed-grove.py-0.7 bme680-2.0.0 bmm150-0.2.2 enum-tools-0.9.0.post1 rpi_ws281x-5.0.0 sgp30-0.1.6
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+pi@raspberryp

@@ -1,0 +1,940 @@
+    1  echo
+    2  echo $
+    3  pwd
+    4  ls -l
+    5  ls -la
+    6  sudo apt update
+    7  apt list --upgradable 
+    8  sudo apt full-upgrade 
+    9  sudo apt install fonts-noto-cjk fcitx5-mozc
+   10  sudo reboot
+   11  echo Hello
+   12  date -d tomorrow
+   13  date tomorrow
+   14  date -h
+   15  date --heilp
+   16  date --help
+   17  echo funabashi hellow
+   18  sudo apt-get update 
+   19  sudo apt-get upgrade 
+   20  sudo apt-get -y upgrade 
+   21  sl
+   22  sudo sl 
+   23  python3
+   24  cd /
+   25  cd -la 
+   26  ls -la
+   27  ls --help
+   28  cd ~
+   29  nano hello.py
+   30  python3
+   31  python3 hello.py
+   32  sudo apt-get install sl
+   33  sl
+   34  sl --help
+   35  sl -F
+   36  sl -l
+   37  shutdown -n
+   38  shutdown
+   39  shutdown -i
+   40  shutdown -v
+   41  shutdown 
+   42  poweroff
+   43  exit
+   44  pwd
+   45  ptree
+   46  sudo tree
+   47  sudo ptree
+   48  hostname
+   49  hostname -I
+   50  nano
+   51  sudo raspi-config
+   52  sudo shutdown
+   53  ip a
+   54  ls -la
+   55  cd Desktop
+   56  ls -la
+   57  mkdir -p \test\test
+   58  ls -la
+   59  rm -ri testtest
+   60  ls -la
+   61  rm -ri testtest
+   62  ls -la
+   63  ps -aux
+   64  sudo raspi-config
+   65  ip a
+   66  ip route
+   67  reboot
+   68  sudo reboot
+   69  ifconfig
+   70  hostname
+   71  hostname -i
+   72  hostname -I
+   73  ip addr
+   74  cd /home
+   75  ls -l
+   76  cd pi
+   77  ls -l
+   78  mkdir /share
+   79  sudo mkdir /share
+   80  ls -l
+   81  ls
+   82  ls -la
+   83  cd~
+   84  cd ~
+   85  ls
+   86  cd /
+   87  ls
+   88  rm -r share
+   89  ls
+   90  rm -r share
+   91  sudo rm -r share
+   92  ls
+   93  cd~
+   94  cd ~
+   95  mkdir /home/pi/share
+   96  ls  /home/pi/share
+   97  cat  /home/pi/share
+   98  ct  /home/pi/share
+   99  cd  /home/pi/share
+  100  ls -la
+  101  chmod 777 /home/pi/share
+  102  ls -la
+  103  cd ..
+  104  ls -la
+  105  sudo apt-get update 
+  106  sudo apt-get install samba
+  107  sudo nano /etc/samba/smb.conf
+  108  sudo apt-get update 
+  109  sudo reboot
+  110  ping -c 4 google.com
+  111  ip route
+  112  sudo reboot
+  113  sudo apt-get update
+  114  sudo apt-get upgrade 
+  115  sudo apt-get update
+  116  sudo apt-get install samba
+  117  sudo reboot
+  118  sudo apt-get update
+  119  sudo apt-get upgrade 
+  120  sudo apt-get install samba
+  121  sudo nano /etc/samba/smb.conf 
+  122  sudo shutdown now
+  123  ip a
+  124  ps -aux
+  125  ip a
+  126  nano /etc/samba/smb.conf 
+  127  ls -la
+  128  sudo apt-get update
+  129  sudo apt-get install samba
+  130  sudo nano /etc/samba/smb.conf 
+  131  sudo service smbd restart
+  132  sudo nano /etc/samba/smb.conf 
+  133  ping -c 4 google.com
+  134  ip a
+  135  cat /etc/resolv.conf 
+  136  ping -c 4 google.com
+  137  sudo reboot
+  138  ls /dev/
+  139  ls -la /dev/
+  140  cat /dev/null
+  141  shutdown --help
+  142  sudo shutdown +0
+  143  set GPIO 18 = 1
+  144  ls /sys/class/gpio
+  145  sudo echo 530 >/sys/class/gpio/export
+  146  sudo echo out >/sys/class/gpio/gpio530/direction
+  147  sudo echo 1 >/sys/class/gpio/gpio530/value
+  148  sudo echo 0 >/sys/class/gpio/gpio530/value
+  149  from gpiozero import LED
+  150  led = LED(18)
+  151  nano blink_cui.py
+  152  python3 blink_cui.py
+  153  sudo echo 530 >/sys/class/gpio/unexport 
+  154  python3 blink_cui.py
+  155  sudo shutdown now
+  156  gpioinfo
+  157  sudo echo 530 >/sys/class/gpio/unexport 
+  158  sudo echo 1 >/sys/class/gpio/gpio530/value
+  159  sudo echo 530 >/sys/class/gpio/export
+  160  sudo echo out >/sys/class/gpio/gpio530/direction
+  161  sudo echo 1 >/sys/class/gpio/gpio530/value
+  162  sudo echo 0 >/sys/class/gpio/gpio530/value
+  163  sudo echo 530 >/sys/class/gpio/unexport 
+  164  sudo echo 1 >/sys/class/gpio/gpio530/value
+  165  ps -ef | grep ssh
+  166  ps -ef | pgrep ssh
+  167  sudo echo 530 >/sys/class/gpio/export
+  168  sudo echo out >/sys/class/gpio/gpio530/direction
+  169  ps -aux
+  170  ps -ef
+  171  sudo echo 528 >/sys/class/gpio/export
+  172  sudo echo in >/sys/class/gpio/gpio528/direction 
+  173  cat /sys/class/gpio/gpio528/value
+  174  sudo i2cdetect -y 1
+  175  raspi-config 
+  176  sudo raspi-config 
+  177  ls /dev/
+  178  ls /dev/ | grep i2c
+  179  sudo i2cdetect -y 1
+  180  sudo apt-get update
+  181  sudo apt-get install python3-pip python3-pil
+  182  sudo install luma.oled --break-system-packages
+  183  sudo pip3 install luma.oled --break-system-packages
+  184  nano oled_hello.py
+  185  python3 oled_hello.py 
+  186  sudo echo 530 >/sys/class/gpio/unexport 
+  187  nano 00_syscall.c
+  188  cat 00_syscall.c 
+  189  gcc -0 00_syscall 00_syscall.c 
+  190  gcc -o 00_syscall 00_syscall.c 
+  191  nano 00_syscall.c
+  192  gcc -o 00_syscall 00_syscall.c 
+  193  nano 00_syscall.c
+  194  gcc -o 00_syscall 00_syscall.c 
+  195  ./ 00_syscall
+  196  ./00_syscall
+  197  cat 00_syscall.c 
+  198  sudo ./00_syscall 
+  199  ps aux | grep pigpio
+  200  ps -ef | grep pigpio
+  201  sudo killall pigpiod
+  202  ps -ef | grep pigpio
+  203  ps aux | grep pigpio
+  204  echo $0
+  205  echo $$
+  206  $?
+  207  echo $$
+  208  $?
+  209  $2
+  210  $1
+  211  $@
+  212  $#
+  213  sudo shutdown now
+  214  piout
+  215  pinout
+  216  man pinout
+  217  uerying Raspberry Pi GPIO pin-out information. Running
+  218  OPTIONS
+  219  EXAMPLES
+  220  man pinout
+  221  pinout --help
+  222  pinout -r
+  223  pinout -r Raspberry Pi 4
+  224  pinout -r c03114
+  225  pinout
+  226  shutdown now
+  227  sudo shutdown now
+  228  ls
+  229  nano 01_02_led.py
+  230  ls
+  231  cp 01_02_led.py /share
+  232  cp 01_02_led.py ./share
+  233  ls
+  234  cd share
+  235  ls
+  236  python3 01_02_led.py 
+  237  sudo reboot
+  238  python3 01_02_led.py 
+  239  sudo rebot
+  240  sudo reboot
+  241  python3 01_02_led.py 
+  242  cat 01_02_led.py 
+  243  python 01_02_led.py 
+  244  python3 01_02_led.py 
+  245  sudo shutdown now
+  246  piout
+  247  pinout
+  248  cat 01_02_led.py 
+  249  reboot
+  250  sudo reboot
+  251  pinout
+  252  cd ./share/
+  253  ls
+  254  cat 01_03_sw.py 
+  255  python3 01_03_sw.py 
+  256  sudo shutdown now
+  257  pinout
+  258  ls
+  259  cd /share
+  260  cd ./share
+  261  python3 01_03_sw.py 
+  262  cat 01_03_sw.py 
+  263  python3 01_03_sw.py 
+  264  pinout
+  265  cat raspo-config
+  266  cat raspi-config
+  267  raspi-config
+  268  sudo raspi-config
+  269  sudo i2cdetect -y 1
+  270  git clone
+  271  git clone https://github.com/Seeed-Studio/grove.py
+  272  cd grove.py
+  273  sudo pip3 install .
+  274  pip3 install . --break-system-packages
+  275  cd
+  276  sudo i2cdetect -y 1
+  277  sudo poweroff
+  278  sudo i2cdetect -y 1
+  279  sudo halt 
+  280  cd ./share/
+  281  cat 01_04_abc.py 
+  282  python3 01_04_abc.py 
+  283  ython3 01_04_abc.py 
+  284  python3 01_04_abc.py 
+  285  ython3 01_04_abc.py 
+  286  python3 01_04_abc.py 
+  287  sudo poweroff 
+  288  rpicam-hello 
+  289  rpicam-hello --list-cameras
+  290  rpicam-hello
+  291  rpicam-hello --list-cameras
+  292  sudo i2cdetect -y 1
+  293  sudo poweroff
+  294  rpicam-hello 
+  295  rpicam-hello -width 1920 -height 1000
+  296  rpicam-hello-width 1920-height 1000
+  297  rpicam-hello--width 1920--height 1000
+  298  rpicam-hello --width 1920 --height 1000
+  299  ls
+  300  cd ./share
+  301  rpicam-still 
+  302  ls
+  303  rpicam-still -o 20260525_test.jpg
+  304  ls
+  305  rpicam-vid -o 20260525_test.mp4
+  306  vlc 20260525_test_copy.mp4 
+  307  python3 03_01_camera.py 
+  308  ffmpeg -i 20260525_test.mp4 -c copy 20260525_test_copy.mp4
+  309  ./share
+  310  cd ./share
+  311  ffmpeg -i 20260525_test.mp4 -c copy 20260525_test_copy.mp4
+  312  nano sub1.py
+  313  nano sub2.py
+  314  python3 sub1.py 
+  315  nano sub1.py
+  316  nano sub2.py
+  317  python3 sub1.py 
+  318  nano sub2.py
+  319  nano sub1.py
+  320  python3 sub1.py 
+  321  python3 sub2.py 
+  322  nano 03_01_camera.py
+  323  cat 03_01_camera.py 
+  324  python3 03_01_camera.py 
+  325  nano 03_01_camera.py
+  326  python3 03_01_camera.py 
+  327  nano 03_01_camera.py
+  328  cat 03_01_camera.py 
+  329  python3 03_01_camera.py 
+  330  python3 -m py_compile 03_01_camera.py 
+  331  sudo nano /boot/firmware/config.txt 
+  332  sudo apt-get update
+  333  sudo apt-get install mpg321
+  334  ls
+  335  alsamixer 
+  336  sudo reboot
+  337  alsamixer 
+  338  cd ./share
+  339  mpg321 ok.mp3 
+  340  ls /proc
+  341  ls /proc/device
+  342  ls /proc/devices
+  343  ls /proc/device-tree
+  344  cat /proc/devices
+  345  cd /
+  346  ls
+  347  alsamixer 
+  348  mpg321 ok.mp3 
+  349  cd ./share
+  350  cd
+  351  cd /
+  352  ls
+  353  cd usr
+  354  ls
+  355  cd /
+  356  ls
+  357  cd
+  358  ls
+  359  ls ..
+  360  ls ../
+  361  ls .
+  362  ls /
+  363  cd root
+  364  cd /root
+  365  cd
+  366  cd ./share
+  367  mpg321 ok.mp3 
+  368  sudo raspi-config 
+  369  alsamixer 
+  370  mpg321 ok.mp3 
+  371  alsamixer 
+  372  aplay -l
+  373  sudo raspi-config 
+  374  mpg321 ok.mp3 
+  375  sudo raspi-config 
+  376  mpg321 ok.mp3 
+  377  aplay -l
+  378  mpg321 ok.mp3 
+  379  sudo reboot
+  380  mpg321 ok.mp3 
+  381  cd ./share
+  382  mpg321 ok.mp3 
+  383  mpg321 -a hw:2,0 ok.mp3
+  384  aplay -l
+  385  mpg321 -a hw:2,0 ok.mp3
+  386  mpg321 -a hw:2,0 ng.mp3 
+  387  mpg321 -a hw:2,0 ok.mp3 
+  388  nano ~./asoundrc
+  389  nano ~/.asoundrc
+  390  ls
+  391  ls -a
+  392  ls ~/
+  393  ls -a ~/.
+  394  nano ~/.bashrc
+  395  mpg321 ok.mp3 
+  396  mpg321 -a hw:2,0 ok.mp3 
+  397  nano ~/.asoundrc
+  398  mpg321 ok.mp3 
+  399  nano ~/.bashrc
+  400  sorce ~/.barshrc
+  401  sorce ~/.bashrc
+  402  source ~/.bashrc
+  403  wget https://www.a-quest.com/archive/package/aquestalkpi-20220207.tgz -O aquestalkpi.tgz↩
+  404  wget https://www.a-quest.com/archive/package/aquestalkpi-20220207.tgz -O aquestalkpi.tgz
+  405  zcat aquestalkpi.tgz | tar xv
+  406  cd aquestalkpi
+  407  mv AquesTalkPi AquesTalkPi32
+  408  mv bin64/AquesTalkPi AquesTalkPi
+  409  ./AquestTalkPi –p 'ゆっくりしていってね' | aplay
+  410  ./AquestTalkPi –p [喋らせる文字] | aplay
+  411  ./AquetTalkPi –p [喋らせる文字] | aplay
+  412  cd
+  413  ./AquetTalkPi –p [喋らせる文字] | aplay
+  414  ./AquetTalkPi –p 'ゆっくりしていってね' | aplay
+  415  ls -a
+  416  cd ./share
+  417  ls 
+  418  cd aquestalkpi
+  419  ./AquetTalkPi –p 'ゆっくりしていってね' | aplay
+  420  ls
+  421  ./AquesTalkPi –p 'ゆっくりしていってね' | aplay
+  422  aplay ~/share/ok.mp3 
+  423  ./AquesTalkPi –p ''千葉県の我孫子、酒々井、八街、匝瑳を巡る' | aplay
+  424  ./AquesTalkPi –p ''千葉県の我孫子、酒々井、八街、匝瑳を巡る' | aplay
+  425  ./AquesTalkPi –p ''千葉県の我孫子、酒々井、八街、匝瑳を巡る' | aplay
+  426  ./AquesTalkPi –p '千葉県の我孫子、酒々井、
+  427  八八街、匝瑳を巡る' | aplay
+  428  ./AquesTalkPi -p '国破山河在
+  429  城春草木深' | aplay
+  430  sudo raspi-config
+  431  alasmaixer
+  432  alsamixer
+  433  ./AquesTalkPi –p '千葉県の我孫子、酒々井、
+  434  八街、匝瑳を巡る' | aplay
+  435  ./AquesTalkPi –p 'aplayのaはadvanced Linux Sound architectureの略です。' | aplay
+  436  ./AquesTalkPi –p 'aplayのaはadvanced Linux Sound architectureの略です。長すぎ、、、' | aplay
+  437  ./AquesTalkPi -p '寿限無じゅげむ、寿限無じゅげむ、
+  438  五劫ごこうのすりきれ、
+  439  海砂利かいじゃり水魚すいぎょの、
+  440  水行末すいぎょうまつ・雲来末うんらいまつ・風来末ふうらいまつ、
+  441  食う寝るところに住むところ、
+  442  やぶらこうじのぶらこうじ、
+  443  パイポ・パイポ・パイポのシューリンガン、
+  444  シューリンガンのグーリンダイ、
+  445  グーリンダイのポンポコピーのポンポコナの、
+  446  長久命ちょうきゅうめいの長助' | aplay
+  447  pinout
+  448  cd ..
+  449  nano 03_02_mp3.py
+  450  python3 -m compileall 03_02_mp3.py 
+  451  python3 03_02_mp3.py 
+  452  cat 03_02_mp3.py 
+  453  nano 03_02_mp3.py 
+  454  python3 03_02_mp3.py 
+  455  nano 03_02_mp3.py 
+  456  python3 03_02_mp3.py 
+  457  cat 03_02_mp3.py 
+  458  nano 03_02_mp3.py 
+  459  python3 03_02_mp3.py 
+  460  nano 03_02_mp3.py 
+  461  python3 03_02_mp3.py 
+  462  nano 03_02_mp3.py 
+  463  python3 03_02_mp3.py 
+  464  nano 03_02_mp3.py 
+  465  python3 03_02_mp3.py 
+  466  cat 03_02_mp3.py 
+  467  nano 03_02_mp3.py 
+  468  python3 03_02_mp3.py 
+  469  nano 03_02_mp3.py 
+  470  python3 03_02_mp3.py 
+  471  ./AquesTalkPi -p '寿限無じゅげむ、寿限無じゅげむ、
+  472  五劫ごこうのすりきれ、
+  473  海砂利かいじゃり水魚すいぎょの、
+  474  水行末すいぎょうまつ・雲来末うんらいまつ・風来末ふうらいまつ、
+  475  食う寝るところに住むところ、
+  476  やぶらこうじのぶらこうじ、
+  477  パイポ・パイポ・パイポのシューリンガン、
+  478  シューリンガンのグーリンダイ、
+  479  グーリンダイのポンポコピーのポンポコナの、
+  480  長久命ちょうきゅうめいの長助' | aplay
+  481  ls
+  482  cd aquestalkpi
+  483  ls
+  484  ./AquesTalkPi -p '寿限無じゅげむ、寿限無じゅげむ、
+  485  五劫ごこうのすりきれ、
+  486  海砂利かいじゃり水魚すいぎょの、
+  487  水行末すいぎょうまつ・雲来末うんらいまつ・風来末ふうらいまつ、
+  488  食う寝るところに住むところ、
+  489  やぶらこうじのぶらこうじ、
+  490  パイポ・パイポ・パイポのシューリンガン、
+  491  シューリンガンのグーリンダイ、
+  492  グーリンダイのポンポコピーのポンポコナの、
+  493  長久命ちょうきゅうめいの長助' | aplay
+  494  python3 03_02_mp3.py 
+  495  cd ..
+  496  python3 03_02_mp3.py 
+  497  alsamixer 
+  498  python3 03_02_mp3.py 
+  499  sudo poweroff
+  500  lsusb
+  501  sudo apt-get install guvcview
+  502  sudo apt-get install fswebcam
+  503  fswebcam image.jpg
+  504  fswebcam -r 1280x720 --no-banner image.jpg
+  505  sudo reboot
+  506  fswebcam -r 1280x720 --no-banner image.jpg
+  507  fswebcam -r 640x480 --no-banner image.jpg
+  508  cd ./share
+  509  fswebcam -r 640x480 --no-banner image.jpg
+  510  ls
+  511  sudo apt-file aquestalkpi
+  512  sudo apt-file sshd
+  513  cp 03_01_camera.py 03_01_camera_org.py
+  514  ls
+  515  nano 03_01_camera.py 
+  516  python3 03_01_camera.py 
+  517  nano 03_01_camera.py 
+  518  python3 03_01_camera.py 
+  519  cat 03_01_camera.py 
+  520  nano 03_01_camera.py 
+  521  touch 04_06_quiz.py
+  522  ls
+  523  python3 04_06_quiz.py 
+  524  cat 04_06_quiz.py 
+  525  python3 04_06_quiz.py 
+  526  poweroff
+  527  sudo poweroff
+  528  ls
+  529  cd ./share
+  530  python3 04_06_quiz.py 
+  531  aplay -l
+  532  python3 04_06_quiz.py 
+  533  alsamixer
+  534  mpg321 ok.mp3 
+  535  aplay -l
+  536  nano ~/.asoundrc
+  537  cd ./share
+  538  cat 04_06_quiz.py 
+  539  python3 04_06_quiz.py 
+  540  ls -la
+  541  cd ./aquestalkpi
+  542  ls -a
+  543  ls -la
+  544  python3 04_06_quiz.py 
+  545  cd ./share
+  546  cd ~/share
+  547  python3 04_06_quiz.py 
+  548  sudo poweroff
+  549  history
+  550  sudo ic2detect 1
+  551  sudo ic2detect -y 1
+  552  sudo i2cdetect 1
+  553  sudo shudown now
+  554  sudo shutdown -0
+  555  sudo shutdown --help
+  556  sudo shutdown now
+  557  i2c detect 1
+  558  i2cdetect 
+  559  i2cdetect 1
+  560  sudo i2cdetect -y -a -r 1
+  561  echo "deb https://seeed-studio.github.io/pi_repo/ stretch main" | sudo tee /etc/apt/sources.list.d/seeed.list
+  562  curl https://seeed-studio.github.io/pi_repo/public.key | sudo tee /etc/apt/trusted.gpg.d/seeed.gpg > /dev/null
+  563  sudo apt update
+  564  # Optional: Seeed binary package (not needed for most sensors)
+  565  sudo apt install libbmi088 libbma456
+  566  # Required: Python layer dependencies
+  567  pip install smbus2 pyserial seeed-python-dht   # DHT DHT series required
+  568  sudo raspi-config
+  569  pip3 install smbus2 pyserial seeed-python-dht --break-system-packages
+  570  git clone https://github.com/Seeed-Studio/grove.py
+  571  cd grove.py
+  572  sudo pip3 install . --break-system-packages
+  573  i2cdetect -ya -1
+  574  i2cdetect -ya 1
+  575  ls
+  576  cd ~
+  577  ./share
+  578  cd ./share
+  579  python3 dht20_demo.py 
+  580  cat dht20_demo.py 
+  581  nano 06_03_dht20.py
+  582  python3 06_03_dht20.py 
+  583  cat 06_03_dht20.py 
+  584  nano dht20_demo.py 
+  585  python3 dht20_demo.py 
+  586  cat dht20_demo.py 
+  587  nano 06_03_dht20.py 
+  588  python3 06_03_dht20.py 
+  589  cat 06_03_dht20.py 
+  590  nano dht20_smbus.py
+  591  python3 dht20_smbus.py 
+  592  cat dht20_s
+  593  cat dht20_smbus.py 
+  594  nano 06_03_dht20.py 
+  595  nano dht20_smbus.py 
+  596  python3 dht20_smbus.py 
+  597  cat dht20_smbus.py 
+  598  nano dht20_smbus.py 
+  599  python3 dht20_smbus.py 
+  600  cat dht20_smbus.py 
+  601  nano dht20_test.py
+  602  python3 dht20_test.py 
+  603  cat dht20_test.py 
+  604  pip install adafruit-circuitpython-ahtx0 adafruit-blinka pandas matplotlib requests
+  605  pip install adafruit-circuitpython-ahtx0 --break-system-packages 
+  606  python3 dht20_test.py 
+  607  python3 dht20_test-コピー.py
+  608  python3 dht20_test - コピー.py
+  609  python3 dht20_test.コピー.py
+  610  fg
+  611  alasmixer
+  612  systemctl shutdown +0
+  613  systemctl shutdown now
+  614  sudo systemctl shutdown now
+  615  poweroff
+  616  sudo shutdown +0
+  617  history
+  618  i2cdetect -ayr 1
+  619  systemctl get-default
+  620  systemctl get-default 
+  621  systemctl isolate multi-user.target 
+  622  find . -type d
+  623  find --help
+  624  find . --name "dht20"
+  625  find . -name "dht20"
+  626  find . -name "dht"
+  627  find . -name dht
+  628  updatedb
+  629  loacate / updatedb
+  630  $?
+  631  $$
+  632  $#
+  633  $1,2
+  634  find --help | grep "name"
+  635  find . -name "*dht20*"
+  636  sudo updatedb
+  637  locate dht20
+  638  echo $?
+  639  echo $$
+  640  echo $#
+  641  echo $1,2
+  642  echo $
+  643  echo $0
+  644  cd ./share
+  645  python3 dht20_test.copy.py 
+  646  raspi-config 
+  647  sudo raspi-config 
+  648  history | grep "*al*"
+  649  history | grep "al"
+  650  alsamixer
+  651  python3 dht20_test.copy.py 
+  652  sudo apt install plocate 
+  653  sudo updatedb
+  654  locate
+  655  python3 dht20_test.copy.py 
+  656  locate dht20
+  657  find . -name "*dht20*"
+  658  sudo raspi-config 
+  659  locate config.txt
+  660  cat /boot/firmware/config.txt 
+  661  find / -name "*dht20*"
+  662  locate dht20
+  663  history | grep user
+  664  sudo systemctl isolate graphical.target 
+  665  python3 dht20_test.copy.py 
+  666  alsamixer
+  667  python3 dht20_test.copy.py 
+  668  locate asoundrc
+  669  cat /usr/share/doc/libasound2t64/examples/asoundrc.txt
+  670  locate sound
+  671  locate soundrc
+  672  mv /usr/share/doc/libasound2t64/examples/asoundrc.txt /usr/share/doc/libasound2t64/examples/asoundrc.txt.bak
+  673  sudo mv /usr/share/doc/libasound2t64/examples/asoundrc.txt /usr/share/doc/libasound2t64/examples/asoundrc.txt.bak
+  674  locate soundrc
+  675  history | db
+  676  history | "*db*"
+  677  history | "*db"
+  678  history | "*update*"
+  679  sudo updatedb
+  680  locate soundrc
+  681  python3 dht20_test.copy.py 
+  682  alsamixer 
+  683  python3 dht20_test.copy.py 
+  684  locate smbus
+  685  locate smbus2
+  686  cat /usr/lib/python3/dist-packages/smbus2/smbus2.py
+  687  cat /usr/lib/python3/dist-packages/smbus2/smbus2.py | grep "SMBus"
+  688  i2cdetect
+  689  i2cdetect -yar
+  690  i2cdetect -yar 1
+  691  grove_3_axis_digital_accelerometer 
+  692  systemcthl poweroff
+  693  systemctl poweroff.target
+  694  locate poweroff
+  695  sudo systemctl /usr/lib/systemd/system/poweroff.target
+  696  sudo systemctl start /usr/lib/systemd/system/poweroff.target
+  697  sudo systemctl isolate /usr/lib/systemd/system/poweroff.target
+  698  sudo systemctl poweroff
+  699  wget http://127.0.0.1/
+  700  ls
+  701  cat index.html 
+  702  wget http://127.0.0.1/
+  703  wget http;//192.168.11.134/
+  704  wget http://192.168.11.134/
+  705  history
+  706  history | grep updatedb
+  707  apche-cache search http
+  708  apt-cache search http
+  709  apt-cache search flask
+  710  apt-cache search Django
+  711  pip3 list 
+  712  dpkg -l frask | grep flask
+  713  dpkg -l | grep flask
+  714  pip3 list | grep flask
+  715  locate flask
+  716  locate jinja
+  717  ls
+  718  sudo mkdir /home/pi/templates
+  719  cd ./pi
+  720  cd /home/pi
+  721  ls
+  722  cd /
+  723  ls
+  724  cd home
+  725  ls
+  726  ls -r 
+  727  cd 
+  728  ls
+  729  pwd
+  730  ls
+  731  cd /templates
+  732  cd templates
+  733  ls
+  734  cd
+  735  sudo pip3 install flask --break-system-packages
+  736  sudo pip3 install jinja2 --break-system-packages
+  737  cd templates/
+  738  nano 08_01_HelloWorld.py
+  739  sudo nano 08_01_HelloWorld.py
+  740  cat 08_01_HelloWorld.py 
+  741  python3 08_01_HelloWorld.py 
+  742  sudo nano 08_01_HelloWorld.py 
+  743  python3 08_01_HelloWorld.py 
+  744  sudo python3 08_01_HelloWorld.py 
+  745  locate index
+  746  locate htnl/index
+  747  locate html/index
+  748  sudo python3 08_01_HelloWorld.py 
+  749  sudo updatedb
+  750  locate html/index
+  751  locate index.html
+  752  sudo mkdir flask /home/pi/flask
+  753  ls
+  754  cd
+  755  ls
+  756  cd flask/
+  757  ls
+  758  sudo nano app.py
+  759  sudo python3 app.py 
+  760  cat app.py 
+  761  nano /home/pi/templates/08_01_HelloWorld.py 
+  762  sudo nano /home/pi/templates/08_01_HelloWorld.py 
+  763  sudo python3 app.py 
+  764  sudo nano app.py
+  765  sudo python3 app.py 
+  766  cat app.py 
+  767  sudo python3 app.py 
+  768  sudo bg python3 app.py 
+  769  sudo bg python3 app.py &
+  770  wget http://127.0.0.1/
+  771  sudo bg python3 app.py 
+  772  sudo python3 app.py & 
+  773  wget http://127.0.0.1/
+  774  fg
+  775  sudo updatedb
+  776  locate index.html
+  777  ipcnfig
+  778  ifconfig
+  779  ip a
+  780  sudo python3 app.py > /dev/null 2>&1 &
+  781  wget http://127.0.0.1/
+  782  fg
+  783  sudo python3 app.py 
+  784  cd /home/pi
+  785  ls
+  786  cd templates/
+  787  nano index.html
+  788  sudo nano index.html
+  789  ls
+  790  cat index.html 
+  791  sudo nano 08_02_jinja.py
+  792  sudo python3 08_02_jinja.py 
+  793  sudo nano 08_02_jinja.py
+  794  sudo python3 08_02_jinja.py 
+  795  cat 08_02_jinja.py 
+  796  ls
+  797  move 08_02_jinja.py ../
+  798  sudo mv 08_02_jinja.py ../
+  799  ls
+  800  cd ../
+  801  ls
+  802  sudo python3 08_02_jinja.py 
+  803  locate poweroff
+  804  sudo systemctl poweroff.target
+  805  sudo systemctl /usr/lib/systemd/system/poweroff.target
+  806  sudosystemctl isolate poweroff.target
+  807  sudo systemctl isolate poweroff.target
+  808  history
+  809  locate 08_
+  810  cd
+  811  ls
+  812  cd /home/pi/templates/
+  813  ls
+  814  cat 08_01_HelloWorld.py 
+  815  ls
+  816  copy 08_01_HelloWorld.py 08_01_HelloWorld.copy.py ~/share
+  817  cp 08_01_HelloWorld.py 08_01_HelloWorld.copy.py ~/share
+  818  cp 08_01_HelloWorld.py ~/share
+  819  cd
+  820  cd share/
+  821  ls
+  822  mv 08_01_HelloWorld.py 08_01_HelloWorld.copy.py
+  823  ls
+  824  cd /home/pi/templates/
+  825  python3 08_01_HelloWorld.py 
+  826  sudo python3 08_01_HelloWorld.py 
+  827  sudo python3 08_01_HelloWorld.py &
+  828  fg
+  829  cat 08_01_HelloWorld.py 
+  830  ss -atn
+  831  sudo python3 08_01_HelloWorld.py &
+  832  ssss -atn
+  833  fg
+  834  ss -atn
+  835  cat index.html 
+  836  ls
+  837  mkdir templates
+  838  sudo mkdir templates
+  839  ls
+  840  mv index.html templates/index.html
+  841  sudo mv index.html templates/index.html
+  842  ls
+  843  cd templates/
+  844  ls
+  845  cd ..
+  846  nano 03_form.html
+  847  sudo nano 03_form.html
+  848  ls
+  849  sudo nano 08_03_form.py
+  850  sudo python3 08_03_form.py
+  851  sudo nano 08_03_form.py 
+  852  sudo python3 08_03_form.py
+  853  ls
+  854  sudo mv 03_form.html templates/03_form.html
+  855  ls
+  856  sudo python3 08_03_form.py
+  857  cat 08_03_form.py 
+  858  cat templates/03_form.html 
+  859  terr
+  860  tree
+  861  apt install tree
+  862  sudo install tree
+  863  locate tree
+  864  cat 08_03_form.py 
+  865  sudo apt-get install apt-file
+  866  apt-file search tree
+  867  apt-file search /bintree
+  868  apt-file search /bin/tree
+  869  apt-file search /usr/bin/tree
+  870  apt-file update 
+  871  sudo apt-file update
+  872  apt-file search tree
+  873  apt-file search /bin/tree
+  874  sudo upadetedb
+  875  sudo updatedb
+  876  sudo apt install tree
+  877  tree
+  878  apt-file search /bin/tree | grep "^tree:"
+  879  tree --charset=C
+  880  cat 08_03_form.py 
+  881  ls
+  882  sudo nano app.py
+  883  cd templates/
+  884  sudo nano index2.html
+  885  cd ..
+  886  sudo python3 app.py 
+  887  sudo nano app.py 
+  888  sudo python3 app.py 
+  889  sudo nano templates/index2.html 
+  890  sudo python3 app.py 
+  891  sudo nano app.py 
+  892  cat app.py 
+  893  cat templates/index2.html 
+  894  sudo python3 app.py 
+  895  cat templates/index2.html 
+  896  sudo python3 app.py 
+  897  sudo nano python3 app.py 
+  898  cat app.py 
+  899  history
+  900  history | grep apt-file
+  901  apt-file search /bin/cmatrix
+  902  sudo apt install cmatrix
+  903  sudo cmatrix 
+  904  apt-file search /bin/cowsay
+  905  apt-file search cowsay
+  906  sudo apt install cowsay
+  907  cowsay "Hello Linux"
+  908  cmatrix 
+  909  ls
+  910  cd
+  911  cd share
+  912  ls
+  913  ls -rla
+  914  cd
+  915  cd templates/
+  916  sudo nano 04_led.html
+  917  history | grep ras
+  918  history | grep gpio
+  919  gpioinfo
+  920  history | grep pin
+  921  pinout
+  922  sudo nano 04_led.html
+  923  ls
+  924  mv 04_led.html templates/04_led.html
+  925  sudo mv 04_led.html templates/04_led.html
+  926  sudo nano 04_led.py
+  927  sudo python3 04_led.py 
+  928  cat 04_led.py 
+  929  cat templates/04_led.html 
+  930  cd
+  931  sudo isolate poweroff.target
+  932  history | grep iso
+  933  sudo systemctl isolate poweroff.target
+  934  history
+  935  cat ~/.bash_history 
+  936  history | grep pass
+  937  history | grep ps
+  938  history | grep 192
+  939  cd share/
+  940  history > my_command_history.txt
