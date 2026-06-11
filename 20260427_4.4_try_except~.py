@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Apr 27 14:15:50 2026
-
-@author: iot01
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Fri Apr 24 09:15:13 2026
 
 @author: iot01
