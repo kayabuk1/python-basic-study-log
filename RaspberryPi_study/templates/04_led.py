@@ -16,6 +16,7 @@ app = Flask(__name__)
 def index():
 	return render_template("04_led.html")
 @app.route("/led25/off")
+
 def led25_off():
 	GPIO.output(LED25_PIN, GPIO.LOW)
 	return redirect("/")
@@ -27,6 +28,20 @@ def led26_off():
 def led27_off():
         GPIO.output(LED27_PIN, GPIO.LOW)
         return redirect("/")
+def choice_led():
+	GETﾒｿｯﾄﾞが飛んで来たら/後ろの文字列を解析して、LED番号を変数led_numberに代入。
+	GETﾒｿｯﾄﾞの受け取りかたが分からない。
+	Fストリングじゃない文字の埋め込み方、
+	実行コードに動的に埋め込むやり方がわからない
+	
+	def led_on(led_number):
+		GPIO.output(LED${変数}_PIN, GPIO.LOW)
+		return redirect("/")
+	return led_on
+	これを返してflaskのイベントループの様なものに実行させる。
+
+
+
 @app.route("/led25/on")
 def led25_on():
         GPIO.output(LED25_PIN, GPIO.HIGH)
