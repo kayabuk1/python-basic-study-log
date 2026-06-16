@@ -6,10 +6,11 @@
 	<meta http-equiv="refresh" content="5">
 	<style>
 		*{outline: 1px solid red; margin:0; box-sizing: border-box;}
-		.btn{justify-content:space-between; padding:5px 10px; margin:0 10px;}
+				div.btncontainer{ display:flex;}
+		.btn{padding:5px 10px; margin:0 10px;}
+		.alert{margin-left: auto;}
 		.sensor_val{color:red;}
 		td{font-size:90%; width:max-content;}
-		td.btncontainer{ display:flex;}
 		td.camera-container {
 			position: relative; /* 重ね合わせの基準位置にする */
 			text-align: center;
@@ -41,12 +42,18 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan=2 class="btncontainer">
+		<td colspan=3 width=450 height=250 class="camera-container">
+			<span class="camera-offline-text"> ※カメラ2がOFFになっています</span>
+			<img src="http://192.168.11.134:8081/?action=stream" id="scamera2" alt="LiveCmaera2" width=450 height=250>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=3>
+			<div class="btncontainer">
 			<a href="/scamera/on" class="btn btn-on"><button>カメラON</button></a>
 			<a href="/scamera/off" class="btn btn-off"><button>カメラOFF</button></a>
-		</td>
-		<td>
-			<a href="/alert/on"><button>Alertボタン</button></a>
+			<a href="/alert/on" class="btn alert"><button>Alertボタン</button></a>
+			</div>
 		</td>
 	</tr>
 	<tr>
