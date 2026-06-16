@@ -6,6 +6,7 @@ import time
 import smbus2
 import RPi.GPIO as GPIO
 from datetime import datetime
+#from gpiozero import Buzzer
 
 bus = smbus2.SMBus(1)
 ADDR = 0x38
@@ -13,6 +14,7 @@ LED25_PIN = 25
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(LED25_PIN, GPIO.OUT)
 start = 0.0
+#bz = Buzzer(12)
 
 app = Flask(__name__)
 
@@ -38,23 +40,30 @@ def hello_world():
 	if end-start > 1:
 		GPIO.output(LED25_PIN, GPIO.LOW)
 	return render_template("04_02_scamera.php",values=outputs)
+	
 @app.route("/scamera/off")
 def scamera_off():
 	cmd_off = "killall mjpg_streamer"
 	subprocess.run(cmd_off, shell=True)
 	return redirect("/")
+	
 @app.route("/scamera/on")
 def scamera_on():
 	cmd_on = "cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &"
+	cmd_on2 = "cd /home/pi && rpicam-vid --camera 0 > /dev/null 2>&1 &"
 	subprocess.run(cmd_on, shell=True)
+	subprocess.run(cmd_on2, shell=True)
 	return redirect("/")
+	
 @app.route("/alert/on")
 def alert_on():
 	global start
 	start = time.time()
 	GPIO.output(LED25_PIN, GPIO.HIGH)
+	#bz.beep(on_time=0.5, off_time=0.5)
 	subprocess.run("cd /home/pi/share/aquestalkpi && ./AquesTalkPi -p '監視カメラ映像録画中です。近づかず立ち去ってください。' | aplay -D hw:2,0",shell=True)
 	return redirect("/")
+	
 @app.route("/snap/on")
 def snap_on():
 	# 1. Pythonで現在時刻を取得し、「20260613_153000」のような文字列を作る
@@ -65,6 +74,7 @@ def snap_on():
 	subprocess.run(cmd_snap, shell=True)
 	print('画像を撮影しました')
 	return redirect("/")
+	
 if __name__=="__main__":
 	app.debug=True
-	app.run(host="0.0.0.0", port=8000)
+	app.run(host="0.0.0.0", port=8000, use_reloader=False)
