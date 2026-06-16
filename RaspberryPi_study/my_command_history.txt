@@ -1,335 +1,3 @@
-    1  echo
-    2  echo $
-    3  pwd
-    4  ls -l
-    5  ls -la
-    6  sudo apt update
-    7  apt list --upgradable 
-    8  sudo apt full-upgrade 
-    9  sudo apt install fonts-noto-cjk fcitx5-mozc
-   10  sudo reboot
-   11  echo Hello
-   12  date -d tomorrow
-   13  date tomorrow
-   14  date -h
-   15  date --heilp
-   16  date --help
-   17  echo funabashi hellow
-   18  sudo apt-get update 
-   19  sudo apt-get upgrade 
-   20  sudo apt-get -y upgrade 
-   21  sl
-   22  sudo sl 
-   23  python3
-   24  cd /
-   25  cd -la 
-   26  ls -la
-   27  ls --help
-   28  cd ~
-   29  nano hello.py
-   30  python3
-   31  python3 hello.py
-   32  sudo apt-get install sl
-   33  sl
-   34  sl --help
-   35  sl -F
-   36  sl -l
-   37  shutdown -n
-   38  shutdown
-   39  shutdown -i
-   40  shutdown -v
-   41  shutdown 
-   42  poweroff
-   43  exit
-   44  pwd
-   45  ptree
-   46  sudo tree
-   47  sudo ptree
-   48  hostname
-   49  hostname -I
-   50  nano
-   51  sudo raspi-config
-   52  sudo shutdown
-   53  ip a
-   54  ls -la
-   55  cd Desktop
-   56  ls -la
-   57  mkdir -p \test\test
-   58  ls -la
-   59  rm -ri testtest
-   60  ls -la
-   61  rm -ri testtest
-   62  ls -la
-   63  ps -aux
-   64  sudo raspi-config
-   65  ip a
-   66  ip route
-   67  reboot
-   68  sudo reboot
-   69  ifconfig
-   70  hostname
-   71  hostname -i
-   72  hostname -I
-   73  ip addr
-   74  cd /home
-   75  ls -l
-   76  cd pi
-   77  ls -l
-   78  mkdir /share
-   79  sudo mkdir /share
-   80  ls -l
-   81  ls
-   82  ls -la
-   83  cd~
-   84  cd ~
-   85  ls
-   86  cd /
-   87  ls
-   88  rm -r share
-   89  ls
-   90  rm -r share
-   91  sudo rm -r share
-   92  ls
-   93  cd~
-   94  cd ~
-   95  mkdir /home/pi/share
-   96  ls  /home/pi/share
-   97  cat  /home/pi/share
-   98  ct  /home/pi/share
-   99  cd  /home/pi/share
-  100  ls -la
-  101  chmod 777 /home/pi/share
-  102  ls -la
-  103  cd ..
-  104  ls -la
-  105  sudo apt-get update 
-  106  sudo apt-get install samba
-  107  sudo nano /etc/samba/smb.conf
-  108  sudo apt-get update 
-  109  sudo reboot
-  110  ping -c 4 google.com
-  111  ip route
-  112  sudo reboot
-  113  sudo apt-get update
-  114  sudo apt-get upgrade 
-  115  sudo apt-get update
-  116  sudo apt-get install samba
-  117  sudo reboot
-  118  sudo apt-get update
-  119  sudo apt-get upgrade 
-  120  sudo apt-get install samba
-  121  sudo nano /etc/samba/smb.conf 
-  122  sudo shutdown now
-  123  ip a
-  124  ps -aux
-  125  ip a
-  126  nano /etc/samba/smb.conf 
-  127  ls -la
-  128  sudo apt-get update
-  129  sudo apt-get install samba
-  130  sudo nano /etc/samba/smb.conf 
-  131  sudo service smbd restart
-  132  sudo nano /etc/samba/smb.conf 
-  133  ping -c 4 google.com
-  134  ip a
-  135  cat /etc/resolv.conf 
-  136  ping -c 4 google.com
-  137  sudo reboot
-  138  ls /dev/
-  139  ls -la /dev/
-  140  cat /dev/null
-  141  shutdown --help
-  142  sudo shutdown +0
-  143  set GPIO 18 = 1
-  144  ls /sys/class/gpio
-  145  sudo echo 530 >/sys/class/gpio/export
-  146  sudo echo out >/sys/class/gpio/gpio530/direction
-  147  sudo echo 1 >/sys/class/gpio/gpio530/value
-  148  sudo echo 0 >/sys/class/gpio/gpio530/value
-  149  from gpiozero import LED
-  150  led = LED(18)
-  151  nano blink_cui.py
-  152  python3 blink_cui.py
-  153  sudo echo 530 >/sys/class/gpio/unexport 
-  154  python3 blink_cui.py
-  155  sudo shutdown now
-  156  gpioinfo
-  157  sudo echo 530 >/sys/class/gpio/unexport 
-  158  sudo echo 1 >/sys/class/gpio/gpio530/value
-  159  sudo echo 530 >/sys/class/gpio/export
-  160  sudo echo out >/sys/class/gpio/gpio530/direction
-  161  sudo echo 1 >/sys/class/gpio/gpio530/value
-  162  sudo echo 0 >/sys/class/gpio/gpio530/value
-  163  sudo echo 530 >/sys/class/gpio/unexport 
-  164  sudo echo 1 >/sys/class/gpio/gpio530/value
-  165  ps -ef | grep ssh
-  166  ps -ef | pgrep ssh
-  167  sudo echo 530 >/sys/class/gpio/export
-  168  sudo echo out >/sys/class/gpio/gpio530/direction
-  169  ps -aux
-  170  ps -ef
-  171  sudo echo 528 >/sys/class/gpio/export
-  172  sudo echo in >/sys/class/gpio/gpio528/direction 
-  173  cat /sys/class/gpio/gpio528/value
-  174  sudo i2cdetect -y 1
-  175  raspi-config 
-  176  sudo raspi-config 
-  177  ls /dev/
-  178  ls /dev/ | grep i2c
-  179  sudo i2cdetect -y 1
-  180  sudo apt-get update
-  181  sudo apt-get install python3-pip python3-pil
-  182  sudo install luma.oled --break-system-packages
-  183  sudo pip3 install luma.oled --break-system-packages
-  184  nano oled_hello.py
-  185  python3 oled_hello.py 
-  186  sudo echo 530 >/sys/class/gpio/unexport 
-  187  nano 00_syscall.c
-  188  cat 00_syscall.c 
-  189  gcc -0 00_syscall 00_syscall.c 
-  190  gcc -o 00_syscall 00_syscall.c 
-  191  nano 00_syscall.c
-  192  gcc -o 00_syscall 00_syscall.c 
-  193  nano 00_syscall.c
-  194  gcc -o 00_syscall 00_syscall.c 
-  195  ./ 00_syscall
-  196  ./00_syscall
-  197  cat 00_syscall.c 
-  198  sudo ./00_syscall 
-  199  ps aux | grep pigpio
-  200  ps -ef | grep pigpio
-  201  sudo killall pigpiod
-  202  ps -ef | grep pigpio
-  203  ps aux | grep pigpio
-  204  echo $0
-  205  echo $$
-  206  $?
-  207  echo $$
-  208  $?
-  209  $2
-  210  $1
-  211  $@
-  212  $#
-  213  sudo shutdown now
-  214  piout
-  215  pinout
-  216  man pinout
-  217  uerying Raspberry Pi GPIO pin-out information. Running
-  218  OPTIONS
-  219  EXAMPLES
-  220  man pinout
-  221  pinout --help
-  222  pinout -r
-  223  pinout -r Raspberry Pi 4
-  224  pinout -r c03114
-  225  pinout
-  226  shutdown now
-  227  sudo shutdown now
-  228  ls
-  229  nano 01_02_led.py
-  230  ls
-  231  cp 01_02_led.py /share
-  232  cp 01_02_led.py ./share
-  233  ls
-  234  cd share
-  235  ls
-  236  python3 01_02_led.py 
-  237  sudo reboot
-  238  python3 01_02_led.py 
-  239  sudo rebot
-  240  sudo reboot
-  241  python3 01_02_led.py 
-  242  cat 01_02_led.py 
-  243  python 01_02_led.py 
-  244  python3 01_02_led.py 
-  245  sudo shutdown now
-  246  piout
-  247  pinout
-  248  cat 01_02_led.py 
-  249  reboot
-  250  sudo reboot
-  251  pinout
-  252  cd ./share/
-  253  ls
-  254  cat 01_03_sw.py 
-  255  python3 01_03_sw.py 
-  256  sudo shutdown now
-  257  pinout
-  258  ls
-  259  cd /share
-  260  cd ./share
-  261  python3 01_03_sw.py 
-  262  cat 01_03_sw.py 
-  263  python3 01_03_sw.py 
-  264  pinout
-  265  cat raspo-config
-  266  cat raspi-config
-  267  raspi-config
-  268  sudo raspi-config
-  269  sudo i2cdetect -y 1
-  270  git clone
-  271  git clone https://github.com/Seeed-Studio/grove.py
-  272  cd grove.py
-  273  sudo pip3 install .
-  274  pip3 install . --break-system-packages
-  275  cd
-  276  sudo i2cdetect -y 1
-  277  sudo poweroff
-  278  sudo i2cdetect -y 1
-  279  sudo halt 
-  280  cd ./share/
-  281  cat 01_04_abc.py 
-  282  python3 01_04_abc.py 
-  283  ython3 01_04_abc.py 
-  284  python3 01_04_abc.py 
-  285  ython3 01_04_abc.py 
-  286  python3 01_04_abc.py 
-  287  sudo poweroff 
-  288  rpicam-hello 
-  289  rpicam-hello --list-cameras
-  290  rpicam-hello
-  291  rpicam-hello --list-cameras
-  292  sudo i2cdetect -y 1
-  293  sudo poweroff
-  294  rpicam-hello 
-  295  rpicam-hello -width 1920 -height 1000
-  296  rpicam-hello-width 1920-height 1000
-  297  rpicam-hello--width 1920--height 1000
-  298  rpicam-hello --width 1920 --height 1000
-  299  ls
-  300  cd ./share
-  301  rpicam-still 
-  302  ls
-  303  rpicam-still -o 20260525_test.jpg
-  304  ls
-  305  rpicam-vid -o 20260525_test.mp4
-  306  vlc 20260525_test_copy.mp4 
-  307  python3 03_01_camera.py 
-  308  ffmpeg -i 20260525_test.mp4 -c copy 20260525_test_copy.mp4
-  309  ./share
-  310  cd ./share
-  311  ffmpeg -i 20260525_test.mp4 -c copy 20260525_test_copy.mp4
-  312  nano sub1.py
-  313  nano sub2.py
-  314  python3 sub1.py 
-  315  nano sub1.py
-  316  nano sub2.py
-  317  python3 sub1.py 
-  318  nano sub2.py
-  319  nano sub1.py
-  320  python3 sub1.py 
-  321  python3 sub2.py 
-  322  nano 03_01_camera.py
-  323  cat 03_01_camera.py 
-  324  python3 03_01_camera.py 
-  325  nano 03_01_camera.py
-  326  python3 03_01_camera.py 
-  327  nano 03_01_camera.py
-  328  cat 03_01_camera.py 
-  329  python3 03_01_camera.py 
-  330  python3 -m py_compile 03_01_camera.py 
-  331  sudo nano /boot/firmware/config.txt 
-  332  sudo apt-get update
   333  sudo apt-get install mpg321
   334  ls
   335  alsamixer 
@@ -938,3 +606,400 @@
   938  history | grep 192
   939  cd share/
   940  history > my_command_history.txt
+  941  ls
+  942  sudo systemctl isolate poweroff.target 
+  943  ls
+  944  cd templates/
+  945  ls
+  946  sudo python3 04_led.py 
+  947  fg
+  948  bg
+  949  ls
+  950  cd templates/
+  951  ls
+  952  sudo nano index3.html
+  953  cd ..
+  954  ls
+  955  sudo nano app2.py
+  956  cat app2.py 
+  957  sudo python3 app2.py 
+  958  sudo nano app2.py 
+  959  sudo python3 app2.py 
+  960  cat app2.py 
+  961  sudo python3 app2.py 
+  962  sudo nano app2.py 
+  963  cp ~/share/app2.py ~/templates/app2.copy.py
+  964  sudo cp ~/share/app2.py ~/templates/app2.copy.py
+  965  ls
+  966  cat app2.copy.py 
+  967  sudo python3 app2.copy.py 
+  968  cd templates/
+  969  sudo nano index3.html 
+  970  cd ..
+  971  sudo python3 app2.copy.py 
+  972  cd templates/
+  973  sudo nano index3.html 
+  974  sudo python3 app2.copy.py 
+  975  cd ..
+  976  sudo python3 app2.copy.py 
+  977  cd ~/share
+  978  touch app_dht20.py
+  979  touch index4.html
+  980  sudo cp app_dht20.py ~/templates/app_dht20.copy.py
+  981  sudo cp index4.html ~/templates/templates/index4.html
+  982  cd ~/templates
+  983  ls
+  984  sudo python3 app_dht20.copy.py 
+  985  cp ~/share/app_dht20.py ~/templates/app_dht20.copy.py 
+  986  sudo cp ~/share/app_dht20.py ~/templates/app_dht20.copy.py 
+  987  sudo python3 app_dht20.copy.py 
+  988  sudo systemctl isolate poweroff.target 
+  989  history | mjpg
+  990  history | grep mjpg
+  991  history | grep *mjpg*
+  992  history | grep ./mjpg
+  993  history | grep cd
+  994  cd ~/templates/
+  995  sudp python3 04_01_livecamera.py
+  996  suop python3 04_01_livecamera.py
+  997  sudo python3 04_01_livecamera.py
+  998  ls
+  999  cat 04_01_livecamera.html 
+ 1000  mv 04_01_livecamera.html ./templates/04_01_livecamera.html 
+ 1001  sudo mv 04_01_livecamera.html ./templates/04_01_livecamera.html 
+ 1002  sudo python3 04_01_livecamera.py
+ 1003  history | grep io
+ 1004  gpioinfo 
+ 1005  history | grep pin
+ 1006  piout
+ 1007  pinout
+ 1008  apt-file search MJPG
+ 1009  locate MJPG
+ 1010  locate streamer
+ 1011  locate mkgp
+ 1012  apt-file show mjpg
+ 1013  apt-file search mjpg
+ 1014  sudo update
+ 1015  sudo apt install -y build-essential pkg-config libjpeg-dev imagemagick lib4l-dev liblog4cpp5-dev
+ 1016  sudo apt update
+ 1017  sudo apt install -y build-essential git cmake pkg-config libjpeg-dev imagemagick lib4l-dev liblog4cpp5-dev
+ 1018  sudo apt install -y build-essential git cmake pkg-config libjpeg-dev imagemagick libv4l-dev liblog4cpp5-dev
+ 1019  git clone  https://github.com/jacksonliam/mjpg-streamer.git
+ 1020  cd mjpg-streamer/mjpg-streamer-experimental
+ 1021  ls
+ 1022  make
+ 1023  ls
+ 1024  pwd
+ 1025  sudo uodatedb
+ 1026  sudo updatedb
+ 1027  locate mjpg
+ 1028  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1029  lsusb
+ 1030  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1031  ls /dev/video
+ 1032  sudo ls /dev/video*
+ 1033  lsusb
+ 1034  lspci
+ 1035  lsmod
+ 1036  lsblk
+ 1037  lsof
+ 1038  cd ~/share/
+ 1039  touch 04_01_livecamera.html
+ 1040  touch 04_01_livecamera.py
+ 1041  cp 04_01_livecamera.html ~/templates/templates/04_01_livecamera.html
+ 1042  sudo cp 04_01_livecamera.html ~/templates/templates/04_01_livecamera.html
+ 1043  sudo cp 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1044  cd ~/templates/
+ 1045  ls
+ 1046  sudo python3 04_01_livecamera.py 
+ 1047  sudo cp 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1048  udo cp 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1049  udo cp -f 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1050  sudo cp -f 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1051  sudo rm ~/templates/04_01_livecamera.py
+ 1052  sudo cp -f 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1053  udo cp 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1054  sudo cp 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1055  cd ~/share/
+ 1056  sudo cp 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1057  cd ~/templates/
+ 1058  ls
+ 1059  sudo python3 04_01_livecamera.py 
+ 1060  cd ~/share/
+ 1061  sudo cp 04_01_livecamera.html ~/templates/04_01_livecamera.html
+ 1062  cd ~/templates/
+ 1063  sudo python3 04_01_livecamera.py 
+ 1064  cd ~/share/
+ 1065  sudo cp 04_01_livecamera.py ~/templates/04_01_livecamera.py
+ 1066  cd ~/templates/
+ 1067  sudo python3 04_01_livecamera.py 
+ 1068  history | grep mpjg
+ 1069  history | grep "*mpjg"
+ 1070  cd mjpg-streamer/mjpg-streamer-experimental
+ 1071  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1072  cd
+ 1073  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1074  cd mjpg-streamer/mjpg-streamer-experimental
+ 1075  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1076  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' &
+ 1077  bg
+ 1078  cd ~/share
+ 1079  sudo python3 04_01_livecamera.py 
+ 1080  fg
+ 1081  sudo python3 04_01_livecamera.py &
+ 1082  fg
+ 1083  sudo python3 04_01_livecamera.py &
+ 1084  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1085  cd mjpg-streamer/mjpg-streamer-experimental
+ 1086  cd
+ 1087  cd mjpg-streamer/mjpg-streamer-experimental
+ 1088  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1089  fg
+ 1090  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1091  cd mjpg-streamer/mjpg-streamer-experimental
+ 1092  cd
+ 1093  cd mjpg-streamer/mjpg-streamer-experimental
+ 1094  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1095  cd ~/share
+ 1096  sudo python3 04_01_livecamera.py 
+ 1097  fg
+ 1098  bg
+ 1099  cd mjpg-streamer/mjpg-streamer-experimental
+ 1100  cd
+ 1101  cd mjpg-streamer/mjpg-streamer-experimental
+ 1102  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1103  cd ~/templates/
+ 1104  sudo python3 04_01_livecamera.py 
+ 1105  fg
+ 1106  cd ~/share
+ 1107  touch 04_02_scamera.php
+ 1108  touch 04_02_scamera.py
+ 1109  sudo cp 04_02_scamera.php ~/templates/templates/04_02_scamera.php
+ 1110  sudo cp 04_02_scamera.py ~/templates/04_02_scamera.py
+ 1111  cd ~/share/
+ 1112  ls
+ 1113  sudo python3 04_02_scamera.py 
+ 1114  cd mjpg-streamer/mjpg-streamer-experimental
+ 1115  cd
+ 1116  cd mjpg-streamer/mjpg-streamer-experimental
+ 1117  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1118  cd ~/templates/
+ 1119  sudo python3 04_02_scamera.py 
+ 1120  cd ~/share/
+ 1121  sudo cp 04_02_scamera.php ~/templates/templates/04_02_scamera.php
+ 1122  cd ~/templates/
+ 1123  sudo cp 04_02_scamera.php ~/templates/templates/04_02_scamera.php
+ 1124  sudo python3 04_02_scamera.py 
+ 1125  fg
+ 1126  history
+ 1127  sudo chown -R pi:pi ~/templates
+ 1128  ls -la
+ 1129  history | grep smb
+ 1130  sudo nano /etc/samba/smb.conf
+ 1131  sudo service smbd restart
+ 1132  sudo nano /etc/samba/smb.conf
+ 1133  sudo systemctl smbd restart
+ 1134  sudo systemctl restart smbd
+ 1135  history
+ 1136  sudo nano /etc/samba/smb.conf
+ 1137  sudo systemctl restart smbd
+ 1138  sudo nano /etc/samba/smb.conf
+ 1139  sudo systemctl restart 
+ 1140  sudo nano /etc/samba/smb.conf
+ 1141  sudo systemctl restart smbd
+ 1142  ls -la
+ 1143  cd ./templates/
+ 1144  ls -la
+ 1145  cd mjpg-streamer/mjpg-streamer-experimental
+ 1146  cd
+ 1147  cd mjpg-streamer/mjpg-streamer-experimental
+ 1148  ./mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1149  cd ~/share/
+ 1150  sudo python3 04_02_scamera.py 
+ 1151  cd ~/templates
+ 1152  sudo python3 04_02_scamera.py 
+ 1153  cd mjpg-streamer/mjpg-streamer-experimental
+ 1154  cd
+ 1155  cd mjpg-streamer/mjpg-streamer-experimental
+ 1156  pwd
+ 1157  fg
+ 1158  ~/mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1159  ps -aux
+ 1160  ps -aux | grep mjpg
+ 1161  ps -aux .py
+ 1162  ps -aux mjpg_st
+ 1163  ps -aux mjpg
+ 1164  ps -aux | grep .py
+ 1165  ps -aux | grep mjpg
+ 1166  ps ^aux | pgrep mjpg
+ 1167  ps -aux | pgrep mjpg
+ 1168  ps -aux | pgrep
+ 1169  ps -aux | pgrep auto
+ 1170  ps -aux | pgrep subporcess
+ 1171  sudo poweroff
+ 1172  history 
+ 1173  cd ~/templates/
+ 1174  ls
+ 1175  sudo python3 04_02_scamera.py 
+ 1176  ps -aux | grep stream
+ 1177  ps -aux | grep mjgp
+ 1178  ps -aux
+ 1179  history 
+ 1180  ~/mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1181  ps -aux | grep mjgp
+ 1182  history 
+ 1183  sudo python3 04_02_scamera.py
+ 1184  ~/mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1185  ~/mjpg_streamer -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10'
+ 1186  history 
+ 1187  mjpg-streamer/mjpg-streamer-experimental -o './output_http.so -w ./www -p 8080' -i './input_uvc.so -d /dev/video1 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1188  sudo python3 04_02_scamera.py
+ 1189  history | grep mjgp
+ 1190  history
+ 1191  cd mjpg-streamer/mjpg-streamer-experimental
+ 1192  cd
+ 1193  cd mjpg-streamer/mjpg-streamer-experimental
+ 1194  tree
+ 1195  cd ~/templates/
+ 1196  sudo python3 04_02_scamera.py
+ 1197  alasmixer
+ 1198  history | grep alsa
+ 1199  alsamixer
+ 1200  sudo python3 04_02_scamera.py
+ 1201  mkdir -p /home/pi/share/scamera_pic
+ 1202  sudo python3 04_02_scamera.py
+ 1203  fg
+ 1204  sudo systemctl isolate poweroff.target 
+ 1205  history \ grep smb
+ 1206  history | grep smb
+ 1207  sudo nano /etc/samba/smb.conf
+ 1208  history | grep chown
+ 1209  sudo systemctl isolate poweroff.target 
+ 1210  cd ~/templates/
+ 1211  python3 04_02_scamera.py 
+ 1212  sudo pip3 install upm
+ 1213  history | grep pip
+ 1214  sudo pip3 install upm --break-system-packages
+ 1215  apt-file search upm
+ 1216  apt-file search upm | grep python
+ 1217  python3 04_02_scamera.py 
+ 1218  fg
+ 1219  ]
+ 1220  bg
+ 1221  python3 04_02_scamera.py 
+ 1222  sudo killall python3
+ 1223  python3 04_02_scamera.py 
+ 1224  usb-devices 
+ 1225  ls -l /dev/video*
+ 1226  raspi-config 
+ 1227  sudo raspi-config 
+ 1228  locate camera
+ 1229  rpicam-hello --list-cameras
+ 1230  ls -l /dev/video*
+ 1231  python3 04_02_scamera.py 
+ 1232  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 1920x1080 -fps 30 -q 10' > /dev/null 2>&1 &
+ 1233  fg
+ 1234  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 1920x1080 -fps 30 -q 10' 
+ 1235  ls -l /dev/video*
+ 1236  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video2 -r 1920x1080 -fps 30 -q 10' 
+ 1237  fg
+ 1238  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video2 -r 1920x1080 -fps 30 -q 10' 
+ 1239  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video3 -r 1920x1080 -fps 30 -q 10' 
+ 1240  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video2 -r 640x480 -fps 30 -q 10'
+ 1241* 
+ 1242  fg
+ 1243  ls -l /dev/video*
+ 1244  rpicam-hello --list-cameras
+ 1245  v4l2-ctl --list-devices
+ 1246  cd ~/templates/
+ 1247  sudo python3 04_02_scamera.py 
+ 1248  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
+
+
+ 1249  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
+
+
+ 1250  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental
+ 1251  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
+
+ 1252  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10'
+ 1253  sudo killall mjpg_streamer
+ 1254  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10'
+ 1255  cd
+ 1256  rpicam-vid --help
+ 1257  rpicam-vid --cmaera 0
+ 1258  rpicam-vid --camera 0
+ 1259  fg
+ 1260  bg
+ 1261  rpicam-vid --camera 0
+ 1262  sudo python3 04_02_scamera.py 
+ 1263  cd ~/templates/
+ 1264  sudo python3 04_02_scamera.py 
+ 1265  v4l2-ctl
+ 1266  cd
+ 1267  cd /share
+ 1268  cd share
+ 1269  git clone https://github.com/AmbientDataInc/ambient-python-lib.git
+ 1270  updatedb
+ 1271  sudo updatedb
+ 1272  locate ambient
+ 1273  cd ambient-python-lib/
+ 1274  ls
+ 1275  cat README.md 
+ 1276  ls
+ 1277  cat amibient.py
+ 1278  sudo nano 20260616_test_ambient.py
+ 1279  python3 20260616_test_ambient.py 
+ 1280  sudo nano 20260616_test_ambient.py
+ 1281  python3 20260616_test_ambient.py 
+ 1282  sudo nano 20260616_test_ambient.py
+ 1283  python3 20260616_test_ambient.py 
+ 1284  sudo nano 20260616_test_ambient.py
+ 1285  python3 20260616_test_ambient.py 
+ 1286  sudo nano 20260616_tes2_ambient_grove
+ 1287  mv 20260616_tes2_ambient_grove 20260616_test2_ambient_grove.py
+ 1288  python3 20260616_test2_ambient_grove.py 
+ 1289  sudo nano 20260616_test2_ambient_grove.py 
+ 1290  python3 20260616_test2_ambient_grove.py 
+ 1291  sudo nano 20260616_test2_ambient_grove.py 
+ 1292  python3 20260616_test2_ambient_grove.py 
+ 1293  sudo nano 20260616_test2_ambient_grove.py 
+ 1294  python3 20260616_test2_ambient_grove.py 
+ 1295  sudo nano 20260616_test2_ambient_grove.py 
+ 1296  python3 20260616_test2_ambient_grove.py 
+ 1297  cat 20260616_test2_ambient_grove.py 
+ 1298  sudo nano 20260616_test2_ambient_grove.py 
+ 1299  python3 20260616_test2_ambient_grove.py 
+ 1300  sudo nano 20260616_test2_ambient_grove.py 
+ 1301  python3 20260616_test2_ambient_grove.py 
+ 1302  cat 20260616_test2_ambient_grove.py 
+ 1303  cd ~/share
+ 1304  cd
+ 1305  pip install adafruit-circuitpython-ahtx0
+ 1306  pip install adafruit-circuitpython-ahtx0 --break-system-packages   
+ 1307  python3 20260616_test2_ambient_grove.py 
+ 1308  cd ~/share
+ 1309  python3 20260616_test2_ambient_grove.py 
+ 1310  ls
+ 1311  cd ~/share/ambient-python-lib
+ 1312  python3 20260616_test2_ambient_grove.py 
+ 1313  updatedb
+ 1314  sudo updatedb
+ 1315  python3 20260616_test2_ambient_grove.py 
+ 1316  sudo nano 20260616_test2_ambient_grove.py 
+ 1317  python3 20260616_test2_ambient_grove.py 
+ 1318  sudo nano 20260616_test2_ambient_grove.py 
+ 1319  python3 20260616_test2_ambient_grove.py 
+ 1320  cd 
+ 1321  sudo nano /etc/samba/smb.conf 
+ 1322  history | grep ch
+ 1323  sudo chown -R pi:pi ~/share/ambient-python-lib
+ 1324  cd ~/share/ambient-python-lib/
+ 1325  python3 20260616_test2_ambient_grove.py 
+ 1326  sudo nano 20260616_test2_ambient_grove.py 
+ 1327  python3 20260616_test2_ambient_grove.py 
+ 1328  cd
+ 1329  hsitory | grep his
+ 1330  history | grep his
+ 1331  cd ~/share
+ 1332  history > my_command_history.txt 
