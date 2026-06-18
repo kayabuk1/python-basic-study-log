@@ -1,0 +1,1311 @@
+コンテンツにスキップ
+メインページ
+コミュニティ・ポータル
+最近の出来事
+新しいページ
+最近の更新
+おまかせ表示
+練習用ページ
+アップロード (ウィキメディア・コモンズ)
+特別ページ
+ヘルプ
+利用案内
+井戸端
+お知らせ
+バグの報告
+ウィキペディアに関するお問い合わせ
+
+
+
+
+
+
+
+
+検索
+
+寄付
+アカウント作成
+ログイン
+
+寄付
+
+アカウント作成
+
+ログイン
+
+ページ先頭
+
+
+
+1
+概要
+
+
+
+
+1.1
+出荷台数
+
+
+
+
+1.2
+製造企業
+
+
+
+
+2
+ハードウェア
+
+
+
+
+2.1
+Model A / Model B
+
+
+
+
+2.2
+キーボード一体型
+
+
+
+
+2.3
+Zero
+
+
+
+
+2.4
+Compute Module
+
+
+
+
+2.5
+Pico
+
+
+
+
+2.6
+カメラ
+
+
+
+
+2.7
+HAT
+
+
+
+
+3
+ギャラリー
+
+
+
+
+4
+ソフトウェア
+
+
+
+
+4.1
+オペレーティングシステム
+
+
+
+
+4.2
+Mathematica
+
+
+
+
+5
+関連項目
+
+
+
+
+6
+脚注
+
+
+
+
+6.1
+注釈
+
+
+
+
+6.2
+出典
+
+
+
+
+7
+外部リンク
+
+
+
+
+7.1
+公式サイト
+
+
+
+
+7.2
+非公式サイト
+
+
+Alemannisch
+Aragonés
+العربية
+Azərbaycanca
+Беларуская
+Български
+বাংলা
+Bosanski
+Català
+کوردی
+Čeština
+Cymraeg
+Dansk
+Deutsch
+English
+Español
+Eesti
+Euskara
+فارسی
+Suomi
+Français
+Gàidhlig
+Galego
+ગુજરાતી
+עברית
+हिन्दी
+Magyar
+Հայերեն
+Bahasa Indonesia
+Íslenska
+Italiano
+ಕನ್ನಡ
+한국어
+Кыргызча
+Latina
+Lombard
+Lietuvių
+Latviešu
+മലയാളം
+Bahasa Melayu
+Nederlands
+Norsk bokmål
+Occitan
+Polski
+Português
+Runa Simi
+Română
+Русский
+Srpskohrvatski / српскохрватски
+Simple English
+Slovenčina
+Slovenščina
+Shqip
+Српски / srpski
+Svenska
+తెలుగు
+Türkçe
+Українська
+Vèneto
+Tiếng Việt
+吴语
+粵語
+中文
+リンクを編集
+ページ
+ノート
+閲覧
+編集
+履歴を表示
+
+閲覧
+
+編集
+
+履歴を表示
+リンク元
+関連ページの更新状況
+ファイルをアップロード
+この版への固定リンク
+ページ情報
+このページを引用
+短縮URLを取得する
+レガシーパーサーに切り替え
+ブックの新規作成
+PDF 形式でダウンロード
+印刷用バージョン
+コモンズ
+ウィキデータ項目
+
+シングルボードコンピュータ
+OS
+Raspberry Pi OS
+SoC
+CPU
+ARM
+メモリ
+ストレージ
+microSD
+PCIe
+USB
+www.raspberrypi.com
+LSE
+RPI
+[1]
+[2]
+[2]
+[2]
+[2]
+[2]
+[2]
+www.raspberrypi.com
+テンプレートを表示
+ARMプロセッサ
+シングルボードコンピュータ
+イギリス
+Raspberry Pi 財団
+開発
+略称
+[3]
+IoT
+2010年代
+[4]
+[5]
+編集
+エイコーン社
+BBC Micro
+コンピュータ科学
+[6]
+[7]
+[8]
+コンピュータ言語
+ARM社
+ARMプロセッサ
+オペレーティングシステム
+RISC OS
+ハードディスク
+ソリッドステートドライブ
+SDメモリーカード
+microSDメモリーカード
+ストレージ
+[9]
+STEM教育
+Arduino
+IchigoJam
+M5Stack
+Obniz
+編集
+
+[10]
+[11]
+[12]
+[13]
+[14]
+[15]
+[16]
+[17]
+[18]
+[19]
+[20]
+[21]
+[22]
+[23]
+[24]
+[25]
+[26]
+[27]
+[28]
+[29]
+[30]
+[31]
+編集
+[32]
+スイッチサイエンス
+[33]
+ソニーグローバルマニュファクチャリング&オペレーションズ
+[34]
+[35]
+[36]
+編集
+編集
+[37]
+[38]
+[39]
+[40]
+[41]
+[42]
+[43]
+[44]
+[45]
+[46]
+[注釈 1]
+[47]
+[48]
+[7]
+[49]
+[50]
+[51]
+[52]
+[53]
+[24]
+[54]
+SoC
+[7]
+Broadcom
+[55]
+Broadcom
+[56]
+Broadcom
+[55]
+[注釈 2]
+[57]
+[58]
+[59]
+[60]
+CPU
+[61]
+[56]
+[61]
+[注釈 2]
+[57]
+[58]
+[59]
+[60]
+[56]
+[57]
+[58]
+[59]
+[60]
+[56]
+[57]
+[58]
+[62]
+[59]
+[60]
+[56]
+[注釈 2]
+[57]
+[58]
+[59]
+[60]
+[56]
+[57]
+[58]
+[59]
+[60]
+GPU
+[63]
+[64]
+[60]
+[64]
+[64]
+OpenGL ES
+FLOPS
+OpenGL ES
+[59]
+OpenGL ES
+[60]
+H.264
+[55]
+MPEG-2
+[65]
+[注釈 3]
+VC-1
+[66]
+[注釈 3]
+[67]
+H.264
+[55]
+MPEG-2
+[65]
+[注釈 3]
+VC-1
+[66]
+[注釈 3]
+[68]
+[59]
+[60]
+[64]
+[56]
+[注釈 4]
+[57]
+[58]
+[59]
+[57]
+[58]
+[59]
+[60]
+[64]
+[9]
+[56]
+[69]
+[70]
+[57]
+[58]
+[59]
+[60]
+[59]
+[60]
+PCIe
+[60]
+[71]
+[注釈 5]
+[60]
+[7]
+コンポジット
+RCA
+PAL
+NTSC
+HDMI
+[72]
+コンポジット
+PAL
+NTSC
+HDMI
+[72]
+コンポジット
+RCA
+PAL
+NTSC
+HDMI
+[72]
+コンポジット
+RCA
+PAL
+NTSC
+HDMI
+[59]
+HDMI
+[60]
+I²S
+[7]
+3.5 mm ジャック
+3.5 mm ジャック
+ストレージ
+[9]
+SDHCカード
+MMC
+[56]
+[57]
+[58]
+[59]
+[60]
+[7]
+[9]
+[69]
+[70]
+[58]
+[59]
+[60]
+[57]
+[7]
+[9]
+IEEE 802.11
+Bluetooth
+BLE
+[56]
+[57]
+[58]
+[59]
+[60]
+[注釈 6]
+GPIO
+GPIO
+UART
+I²C
+SPI
+[注釈 7]
+[63]
+[73]
+GPIO
+[56]
+GPIO
+GPIO
+[注釈 7]
+[63]
+[73]
+GPIO
+[57]
+[58]
+[59]
+[60]
+[74]
+[74]
+[74]
+[74]
+[74]
+[74]
+[74]
+[75]
+[76]
+[77]
+[56]
+[57]
+[58]
+[59]
+[60]
+[7]
+GPIO
+GPIO
+GPIO
+GPIO
+GPIO
+[59]
+[60]
+[78]
+[79]
+[80]
+Debian
+Fedora
+Arch Linux
+RISC OS
+Ubuntu
+Windows 10 IoT Core
+Debian
+Fedora
+Arch Linux
+RISC OS
+Ubuntu
+Windows 10 IoT Core
+Raspberry Pi OS
+編集
+[81]
+[82]
+[83]
+編集
+[84]
+[85]
+[86]
+SoC
+[7]
+CPU
+GPU
+OpenGL ES
+H.264
+[55]
+MPEG-2
+[65]
+[注釈 3]
+VC-1
+[66]
+[注釈 3]
+[9]
+[87]
+[7]
+I²S
+[7]
+ストレージ
+[9]
+[7]
+[9]
+[7]
+[9]
+IEEE 802.11
+Bluetooth
+BLE
+GPIO
+GPIO
+[74]
+[74]
+[88]
+[77]
+[7]
+GPIO
+[89]
+[90]
+[91]
+Raspberry Pi OS
+編集
+PCIe
+M.2
+AIアクセラレータ
+[92]
+[93]
+[94]
+[94]
+[94]
+SoC
+[7]
+CPU
+GPU
+[63]
+OpenGL ES
+H.264
+MPEG-2
+[65]
+[注釈 3]
+VC-1
+[66]
+[注釈 3]
+[95]
+[9]
+PCIe
+[7]
+I²S
+[7]
+ストレージ
+[9]
+[7]
+[9]
+[7]
+[9]
+GPIO
+[96]
+[97]
+[98]
+[98]
+[99]
+[100]
+Raspberry Pi OS
+編集
+[101]
+[102]
+マイクロコントローラ
+[103]
+[104]
+編集
+[105]
+[106]
+オートフォーカス
+HDR
+[107]
+[108]
+グローバルシャッター
+[109]
+[110]
+AIアクセラレータ
+[111]
+[112]
+[113]
+編集
+[114]
+[115]
+PCIe
+M.2
+[116]
+[117]
+[118]
+AIアクセラレータ
+[119]
+[120]
+[92]
+NVIDIA Jetson
+[121]
+大規模言語モデル
+[122]
+Lego Technic
+[123]
+[124]
+Power over Ethernet
+[125]
+DVB-T2
+[126]
+編集
+
+
+
+
+
+
+
+編集
+編集
+Raspberry Pi OS
+イメージ
+Raspberry Pi OS
+Debian
+LXDE
+デスクトップ環境
+Chromium
+ウェブブラウザ
+[127]
+エミュレート
+QEMU
+[128]
+Arch Linux
+Fedora
+Ubuntu MATE
+カナダ
+[129]
+[130]
+アプリケーションストア
+Raspberry Pi OS
+[131]
+[132]
+[133]
+編集
+2013年
+数式処理ソフト
+Mathematica
+Wolfram
+Raspberry Pi OS
+[134]
+[135]
+パソコン
+[134]
+コーディング
+インタフェース
+[134]
+[136]
+[137]
+編集
+BeagleBoard
+PandaBoard
+Banana Pi
+Orange Pi
+Raspberry Pi OS
+IchigoJam
+編集
+脚注の使い方
+編集
+↑
+1
+2
+3
+Raspberry Pi2 Model B v1.2
+Avid Technology, Inc.
+オリジナル
+1
+2
+3
+4
+5
+6
+7
+8
+↑
+↑
+↑
+GPIO
+1
+2
+編集
+↑
+Raspberry Pi IPO - Raspberry Pi
+1
+2
+3
+4
+5
+6
+HFI FY 2021, 2022 and 2023 - IPO - Raspberry Pi Investor Relations
+↑
+自作でIoTしよう！ 超小型PC「Raspberry Pi＝ラズパイ」 の魅力とは？
+↑
+Expected Intention to Float Announcement - IPO - Raspberry Pi Investor Relations
+↑
+Raspberry Piが英国で上場へ、IPO検討を正式発表
+↑
+Raspberry Pi: Cheat Sheet
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+FAQs
+↑
+Cellan-Jones, Rory
+A £15 computer to inspire young programmers
+BBC News
+Can a £15 computer solve the programming gap?
+BBC Click
+Dongle computer lets kids discover programming on a TV
+Electronics Weekly
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Verified USB Peripherals and SDHC Cards; eLinux.org
+↑
+TWO MILLION! - Raspberry Pi
+↑
+Raspberry Pi at Buckingham Palace, 3 million sold | Raspberry Pi
+↑
+Five million sold! | Raspberry Pi
+↑
+Senior Pi - Raspberry Pi
+↑
+RASPBERRY PI 3 ON SALE NOW AT $35
+↑
+TEN MILLIONTH RASPBERRY PI, AND A NEW KIT
+↑
+The Mag Pi Magazine issue 53, Page 10
+https://www.raspberrypi.org/magpi/issues/53/
+↑
+Raspberry Pi 3 Model B+ on sale now at $35
+↑
+Raspberry Pi numbers get stale fast. We sold our thirty-millionth unit some time last week (we think Tuesday).
+↑
+Meet Raspberry Silicon: Raspberry Pi Pico now on sale at $4
+↑
+Chris Fleck and Eben Upton on Twitter
+https://twitter.com/chrisfleck/status/1392224692862427138
+↑
+Raspberry Pi gets $45M to meet demand for low-cost PCs and IoT
+https://techcrunch.com/2021/09/21/raspberry-pi-gets-45m-to-meet-demand-for-low-cost-pcs-and-iot/
+↑
+Impact Stories: Raspberry Pi
+https://theindexproject.org/post/impact-stories-raspberry-pi
+↑
+One decade, 46 million units: Happy birthday, Raspberry Pi
+https://www.theregister.com/2022/02/28/pi_at_10/
+1
+2
+Supply chain, shortages, and our first-ever price increase - Raspberry Pi
+↑
+Production and supply-chain update - Raspberry Pi
+↑
+Supply chain update - it's good news! - Raspberry Pi
+↑
+Raspberry Pi CEO: ‘Million-Unit Months’ Are Ahead
+↑
+Raspberry Piの品不足が解消、7月から月産100万台へ。CEOが発言
+↑
+Liz and Eben honoured by The National Museum of Computing
+https://www.raspberrypi.com/news/liz-and-eben-honoured-by-the-national-museum-of-computing/
+↑
+Liz and Eben honoured by The National Museum of Computing
+https://www.investing.com/news/stock-market-news/raspberry-pi-plans-ipo-on-london-stock-exchange-in-h2-2024-93CH-3193264
+↑
+Since Raspberry Pi began trading in 2012, it has sold over 60 million SBCs and compute modules, of which 7.4 million were sold in 2023.
+https://www.londonstockexchange.com/news-article/market-news/expected-intention-to-float/16470316
+↑
+ラズパイの製造・販売からRS Componentsが撤退、ラズパイ品薄への影響は？
+↑
+Raspberry Pi Approved Reseller – Raspberry Pi
+↑
+日本にRaspberry Pi 5専用ライン新設も、ソニーとラズパイの「長い蜜月」
+↑
+日本製ラズパイの工場見学レポート
+↑
+【トピック】Raspberry Pi創始者Eben Upton氏インタビュー。気になる供給状況や教育市場について尋ねてみた
+↑
+New product: Raspberry Pi 3 Model A+ on sale now at $25 - Raspberry Pi
+↑
+FCC ID 2ABCB-RPI3AP Single Board Computer by Raspberry Pi Trading Ltd
+↑
+Raspberry Pi 3 Model B+ on sale now at $35 - Raspberry Pi
+↑
+FCC ID 2ABCB-RPI3BP Single Board Computer by Raspberry Pi Trading Ltd
+↑
+Raspberry Pi 4 on sale now from $35 - Raspberry Pi
+↑
+FCC ID 2ABCB-RPI4B Single Board Computer by Raspberry Pi Trading Ltd
+↑
+Raspberry Pi 5: available now! - Raspberry Pi
+↑
+FCC ID 2ABCB-RPI32 Raspberry Pi 3 Model B - Single Board Computer by Raspberry Pi Trading Ltd
+↑
+FCC ID 2ABCB-RPI5 Single board computer by Raspberry Pi Trading Ltd
+↑
+総務省 電波利用ホームページ｜技術基準適合証明等を受けた機器の検索
+↑
+総務省 電波利用ホームページ｜技術基準適合証明等を受けた機器の検索
+↑
+総務省 電波利用ホームページ | 技術基準適合証明等を受けた機器の検索
+↑
+BLOG - RASPBERRY PI 3 ON SALE NOW AT $35 | Raspberry Pi
+↑
+Introducing Raspberry Pi Model B+
+↑
+“Mini Raspberry Pi computer goes on sale for £22”
+https://www.telegraph.co.uk/technology/news/9112841/Mini-Raspberry-Pi-computer-goes-on-sale-for-22.html
+↑
+Raspberry Pi Blog - News, Announcements, and Ideas
+↑
+A birthday gift: 2GB Raspberry Pi 4 now only $35 - Raspberry Pi
+↑
+8GB Raspberry Pi 4 on sale now at $75 - Raspberry Pi
+1
+2
+3
+4
+5
+BCM2835 Media Processor; Broadcom.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Buy a Raspberry Pi 3 Model A+ – Raspberry Pi
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Buy a Raspberry Pi 3 Model B – Raspberry Pi
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Buy a Raspberry Pi 3 Model B+ – Raspberry Pi
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+Raspberry Pi 4 Model B specifications – Raspberry Pi
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+Buy a Raspberry Pi 5 – Raspberry Pi
+1
+2
+ARM1176JZF-S Revision:r0p7 Technical Reference Manual
+↑
+Bullseye bonus: 1.8GHz Raspberry Pi 4 - Raspberry Pi
+1
+2
+3
+4
+Q&A with our hardware team
+1
+2
+3
+4
+5
+Raspberry Pi Documentation - Processors
+1
+2
+3
+4
+MPEG-2 license key
+1
+2
+3
+4
+VC-1 license key
+↑
+Raspberry Pi 3 Model A+ product brief
+↑
+Raspberry Pi 3 Model B+ product brief
+1
+2
+SMSC LAN9512 Website; smsc.com
+1
+2
+New product launch! Introducing Raspberry Pi Model B+
+↑
+PCIe Gen 3.0 - Raspberry Pi hardware - Raspberry Pi Documentation
+1
+2
+3
+Embedded Linux Wiki: Hardware Basic Setup
+1
+2
+Raspberry PI GPIO Connector; eLinux.org
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1. WHAT ARE THE POWER REQUIREMENTS? - POWER - Raspberry Pi FAQs - Frequently Asked Questions
+↑
+PowerDraw
+↑
+specifications
+1
+2
+Raspberry Pi Documentation - Getting started
+↑
+Raspberry Pi 3 Model B+（UD-RP3BP） 仕様 | Raspberry Pi（ラズベリーパイ） | アイ・オー・データ機器 I-O DATA
+↑
+Raspberry Pi 4 Model B - 8GB
+↑
+Raspberry Pi 5
+↑
+Buy a Raspberry Pi 400 Personal Computer Kit – Raspberry Pi
+↑
+Raspberry Pi 500 and Raspberry Pi Monitor on sale now - Raspberry Pi
+↑
+The ultimate all-in-one PC: Raspberry Pi 500+ on sale now at $200 - Raspberry Pi
+↑
+Zero WH: pre-soldered headers and what to do with them - Raspberry Pi
+↑
+FCC ID 2ABCB-RPIZ2 Radio module by Raspberry Pi Trading Ltd
+↑
+FCC ID 2ABCB-RPI0W Single Board Computer by Raspberry Pi Trading Ltd
+↑
+Zero grows a camera connector - Raspberry Pi
+↑
+Everything about Raspberry Pi Zero 2 W
+↑
+Raspberry Pi Zero v1.3
+↑
+Raspberry Pi Zero WH（UD-RPZWH） 仕様 | Raspberry Pi（ラズベリーパイ） | IODATA アイ・オー・データ機器
+↑
+Raspberry Pi Zero 2 W
+1
+2
+Hailo-8 M.2 AI Acceleration Module · Issue #164 · geerlingguy/raspberry-pi-pcie-devices
+↑
+Compute Module 5 on sale now from $45 - Raspberry Pi
+1
+2
+3
+Compute Module 3 Launch!(The original Compute Module is also reduced to $25. )
+↑
+New memory variants for the Raspberry Pi Compute Module family - Raspberry Pi
+↑
+DATASHEET
+↑
+DATASHEET
+1
+2
+“DATASHEET 7.2 Power Requirements”
+https://www.adafruit.com/product/3441
+↑
+Comment by James Adams on Compute Module announcement
+↑
+Compute Module 3
+↑
+「Raspberry Pi Pico」が発売、独自開発の40nmマイコン「RP2040」を搭載
+↑
+Raspberry Pi Documentation
+↑
+Raspberry Pi Pico 2, our new $5 microcontroller board, on sale now - Raspberry Pi
+↑
+Raspberry Pi Pico 2 W on sale now at $7 - Raspberry Pi
+↑
+Raspberry Pi Documentation - Camera
+↑
+Buy a Raspberry Pi Camera Module 2 – Raspberry Pi
+↑
+Buy a Raspberry Pi Camera Module 3 – Raspberry Pi
+↑
+Buy a Raspberry Pi High Quality Camera – Raspberry Pi
+↑
+Buy a Raspberry Pi Global Shutter Camera – Raspberry Pi
+↑
+New Raspberry Pi Global Shutter Camera for machine vision and more - Raspberry Pi
+↑
+Buy a Raspberry Pi AI Camera – Raspberry Pi
+↑
+picamera — Picamera 1.13 Documentation
+↑
+raspberrypi/picamera2: New libcamera based python library
+↑
+hats/README.md at master · raspberrypi/hats · GitHub
+↑
+Double standards - Raspberry Pi
+↑
+Buy a Raspberry Pi M.2 HAT+ – Raspberry Pi
+↑
+Buy a Raspberry Pi SSD Kit – Raspberry Pi
+↑
+Raspberry Pi 5に公式SSDを接続して起動ディスクに設定する手順まとめ＆SSDとmicroSDカードの速度比較もあり
+↑
+Buy a Raspberry Pi AI Kit – Raspberry Pi
+↑
+Raspberry Pi AI Kit available now at $70 - Raspberry Pi
+↑
+Buy a Raspberry Pi AI HAT+ – Raspberry Pi
+↑
+Introducing the Raspberry Pi AI HAT+ 2: Generative AI on Raspberry Pi 5 - Raspberry Pi
+↑
+Buy a Raspberry Pi Build HAT – Raspberry Pi
+↑
+Buy a Sense HAT – Raspberry Pi
+↑
+Buy a PoE+ HAT – Raspberry Pi
+↑
+Buy a Raspberry Pi TV HAT – Raspberry Pi
+↑
+資料をクラウドで共有したい！ という声に、ラズパイはWebブラウザで応えることができる。
+↑
+linuxnews showing the first release of Debian Squeeze for Raspberry running on QEMU
+↑
+“$35 computer 'Raspberry Pi' readies for launch”
+CBC.ca
+http://www.cbc.ca/news/technology/story/2012/02/23/technology-raspberry-pi-cheap-computer.html
+↑
+Raspberry foundation announcing "first root filesystem available for download"
+↑
+Real-time Linux for RPi1
+↑
+Real-time Linux for RPi2
+↑
+Step01 – Bare Metal Programming in C Pt1
+1
+2
+3
+RasberryPi、数式処理ソフト「Mathematica」を同梱。個人利用は無料
+↑
+Raspberry Pi、数式処理ソフト「Mathematica」を無料でバンドル
+↑
+Raspberry Pi—Wolfram言語ドキュメント
+↑
+Mathematica 10 – now available for your Pi! | Raspberry Pi
+編集
+メディア
+カテゴリ
+編集
+Raspberry Pi
+Raspberry Pi Foundation
+Raspberry Pi Forum
+Raspberry Pi Social
+編集
+RPi Hub
+典拠管理データベース
+
+FAST
+ドイツ
+アメリカ
+フランス
+BnF data
+チェコ
+スペイン
+イスラエル
+IdRef
+Yale LUX
+https://ja.wikipedia.org/w/index.php?title=Raspberry_Pi&oldid=109853717
+カテゴリ
+ハードウェア
+シングルボードコンピュータ
+Raspberry Pi
+Linux
+教育ハードウェア
+個人設定
+UTC
+Parsoid
+クリエイティブ・コモンズ 表示-継承ライセンス
+利用規約
+プライバシー・ポリシー
+ウィキペディアについて
+免責事項
+行動規範
+開発者
+統計
+Cookieに関する声明
+モバイルビュー
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+話題を追加
+
