@@ -502,29 +502,7 @@ Spyderシステム：「サイズを調べるために、裏でこっそり len(
 __len__ のような特殊メソッド内で安易に print を仕込むと、IDEやデバッガが状態を確認しようとした際に意図せぬ出力が発生することがある。
 '''
 
-#%% 11.2.8 アトリビュートの取得/挙動の設定をカスタマイズする。
-class MyInfo:
-    #↓アトリビュート格納の為の辞書を準備
-    def __init__(self):
-        super().__setattr__('__data', {})
-        
-    #↓指定されたアトリビュートを__dataから取得
-    def __getattr__(self, name):
-        try:
-            return super().__getattribute__('__data')[name]
-        except KeyError as ex:
-            return None
-        
-    #↓指定されたアトリビュートを__dataに格納
-    def __setattr__(self, name, value):
-        super().__getattribute__('__data')[name] = value
-        
-if __name__=='__main__'        :
-    i = MyInfo()
-    i.score = 58
-    i.hobbey = '卓球'
-    print(i.hobbey)
-    print(i.__dict__)
+
 
 
 
