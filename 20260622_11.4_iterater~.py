@@ -116,6 +116,107 @@ for ループの正体: 裏側で iter() を使ってコンベアを作り、nex
 「自作のクラスを、Python標準のリストや文字列と全く同じように for ループに放り込めるようにする魔法」。スッキリと腹落ちされましたでしょうか！🦁🔥
 '''    
     
+#%% 11.4.2 素数を求めるイテレーター
+import math
+
+class Prime:
+    def __init__(self, max):
+        self.max = max
+        self.__current = 1
+    
+    #イテレーター※自分自身を返す
+    def __iter__(self):
+        return self
+    
+    #イテレーターの本体を実装
+    def __next__(self):
+        while True:
+            self.__current += 1
+            if self.__current > self.max:
+                raise StopIteration
+            elif self.__is_prime(self.__current):
+                return self.__current
+    
+    #引数valueが素数かどうかを判定
+    def __is_prime(self, value):
+        result = True #素数かどうかを表すフラグ
+        # 2~sqrt(value)で Valueを割り切れる(=余りが0)ものがあるか判定
+        #10なら、 平方根は√100≒10．0これを切り捨て 10 。
+        #これに+1 して 11。 range(始まりの数, 終わりの数（含まない）までなので)、
+        #11まで 1つずつ数を取り出して、 value=__currentを i (1~10)で割って、 割り切れる場合は、
+        #素数でないのでFalse を返して、break。 次のforの数が割り切れるかのループになる。
+        #そのforループも終われば、whileループに戻り__currentが1加算され、次のforループになる
+        for i in range(2, math.floor(math.sqrt(value))+1):
+            if value % i == 0:
+                result = False #割り切れるものがあれば素数でない
+                break
+        return result
+    
+if __name__=="__main__"    :
+    pr = Prime(100)
+    for p in pr:
+        print(p, end=",")
+    #2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,
+    
+    
+#%% 11.4.3 コンテナー型で利用出来る特殊メソッド
+class Person:
+    def __init__(self, firstname, lastname)    :
+        self.firstname = firstname
+        self.lastname = lastname
+    def show(self):
+        print(f'私の名前は{self.lastname}{self.firstname}です！')
+
+class PersonList:
+    #Personクラスを格納する為の変数を準備
+    def __init__(self):
+        self.data = []
+    
+    def add(self, person):
+        self.data.append(person)
+    def __iter__(self):
+        return iter(self.data)
+    
+    #↓コンテナー型に関わる特殊メソッド
+    def __getitem__(self, key):
+    #↑obj[key]で参照した時に呼び出されている。
+        return self.data[key]
+    def __setitem__(self, key, value):
+    #↑obj[key]=valueで設定した時呼び出されている。
+        self.data[key] = value
+    #●つまりobj[key]、 obj[key]=value この2つは糖衣構文？
+    #●内部的には pl.__getitem__(pl, key)の様に変換されている？
+    #●代入はすべて__setattr__とgetattribute__を経由すると聞いたけれど、
+    # それはただの変数への代入であって、 コンテナー型への代入は異なるメソッド
+    # __setitem__が呼び出されているということ？
+    
+if __name__=="__main__"        :
+    pl = PersonList()
+    pl.add(Person('太郎','山田'))
+    pl.add(Person('奈美','掛谷'))
+    pl.add(Person('悟助','田中'))
+    
+    print(pl[:])
+    #[<__main__.Person object at 0x000001C8BA8AE910>, <__main__.Person object at 0x000001C8BA8B1BD0>, <__main__.Person object at 0x000001C8BA8B1FD0>]
+    # print(pl[0:3].firstname)
+    #AttributeError: 'list' object has no attribute 'firstname'
+    #↑の書き方ではfirstnameにはアクセスできない。
+    for p in pl:
+        print(p.firstname) #太郎　奈美　悟助
+
+    #↓listに値を代入＝__setitem__メソッドが呼び出される
+    pl[1] = Person('哲也', '佐藤')
+    #↓listの値を参照＝__getitem__メソッドが呼び出される
+    print(pl[1].firstname)
+    #哲也
+    print(pl[0:3])
+    #[<__main__.Person object at 0x000001C8BA8AE910>, <__main__.Person object at 0x000001C8BA8B0210>, <__main__.Person object at 0x000001C8BA8B1FD0>]
+    for p in pl:
+        print(p.firstname)
+     #太郎　哲也　悟助
+    
+    
+    
     
     
     
