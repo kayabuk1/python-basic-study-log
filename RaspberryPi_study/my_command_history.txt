@@ -1,201 +1,3 @@
-  333  sudo apt-get install mpg321
-  334  ls
-  335  alsamixer 
-  336  sudo reboot
-  337  alsamixer 
-  338  cd ./share
-  339  mpg321 ok.mp3 
-  340  ls /proc
-  341  ls /proc/device
-  342  ls /proc/devices
-  343  ls /proc/device-tree
-  344  cat /proc/devices
-  345  cd /
-  346  ls
-  347  alsamixer 
-  348  mpg321 ok.mp3 
-  349  cd ./share
-  350  cd
-  351  cd /
-  352  ls
-  353  cd usr
-  354  ls
-  355  cd /
-  356  ls
-  357  cd
-  358  ls
-  359  ls ..
-  360  ls ../
-  361  ls .
-  362  ls /
-  363  cd root
-  364  cd /root
-  365  cd
-  366  cd ./share
-  367  mpg321 ok.mp3 
-  368  sudo raspi-config 
-  369  alsamixer 
-  370  mpg321 ok.mp3 
-  371  alsamixer 
-  372  aplay -l
-  373  sudo raspi-config 
-  374  mpg321 ok.mp3 
-  375  sudo raspi-config 
-  376  mpg321 ok.mp3 
-  377  aplay -l
-  378  mpg321 ok.mp3 
-  379  sudo reboot
-  380  mpg321 ok.mp3 
-  381  cd ./share
-  382  mpg321 ok.mp3 
-  383  mpg321 -a hw:2,0 ok.mp3
-  384  aplay -l
-  385  mpg321 -a hw:2,0 ok.mp3
-  386  mpg321 -a hw:2,0 ng.mp3 
-  387  mpg321 -a hw:2,0 ok.mp3 
-  388  nano ~./asoundrc
-  389  nano ~/.asoundrc
-  390  ls
-  391  ls -a
-  392  ls ~/
-  393  ls -a ~/.
-  394  nano ~/.bashrc
-  395  mpg321 ok.mp3 
-  396  mpg321 -a hw:2,0 ok.mp3 
-  397  nano ~/.asoundrc
-  398  mpg321 ok.mp3 
-  399  nano ~/.bashrc
-  400  sorce ~/.barshrc
-  401  sorce ~/.bashrc
-  402  source ~/.bashrc
-  403  wget https://www.a-quest.com/archive/package/aquestalkpi-20220207.tgz -O aquestalkpi.tgz↩
-  404  wget https://www.a-quest.com/archive/package/aquestalkpi-20220207.tgz -O aquestalkpi.tgz
-  405  zcat aquestalkpi.tgz | tar xv
-  406  cd aquestalkpi
-  407  mv AquesTalkPi AquesTalkPi32
-  408  mv bin64/AquesTalkPi AquesTalkPi
-  409  ./AquestTalkPi –p 'ゆっくりしていってね' | aplay
-  410  ./AquestTalkPi –p [喋らせる文字] | aplay
-  411  ./AquetTalkPi –p [喋らせる文字] | aplay
-  412  cd
-  413  ./AquetTalkPi –p [喋らせる文字] | aplay
-  414  ./AquetTalkPi –p 'ゆっくりしていってね' | aplay
-  415  ls -a
-  416  cd ./share
-  417  ls 
-  418  cd aquestalkpi
-  419  ./AquetTalkPi –p 'ゆっくりしていってね' | aplay
-  420  ls
-  421  ./AquesTalkPi –p 'ゆっくりしていってね' | aplay
-  422  aplay ~/share/ok.mp3 
-  423  ./AquesTalkPi –p ''千葉県の我孫子、酒々井、八街、匝瑳を巡る' | aplay
-  424  ./AquesTalkPi –p ''千葉県の我孫子、酒々井、八街、匝瑳を巡る' | aplay
-  425  ./AquesTalkPi –p ''千葉県の我孫子、酒々井、八街、匝瑳を巡る' | aplay
-  426  ./AquesTalkPi –p '千葉県の我孫子、酒々井、
-  427  八八街、匝瑳を巡る' | aplay
-  428  ./AquesTalkPi -p '国破山河在
-  429  城春草木深' | aplay
-  430  sudo raspi-config
-  431  alasmaixer
-  432  alsamixer
-  433  ./AquesTalkPi –p '千葉県の我孫子、酒々井、
-  434  八街、匝瑳を巡る' | aplay
-  435  ./AquesTalkPi –p 'aplayのaはadvanced Linux Sound architectureの略です。' | aplay
-  436  ./AquesTalkPi –p 'aplayのaはadvanced Linux Sound architectureの略です。長すぎ、、、' | aplay
-  437  ./AquesTalkPi -p '寿限無じゅげむ、寿限無じゅげむ、
-  438  五劫ごこうのすりきれ、
-  439  海砂利かいじゃり水魚すいぎょの、
-  440  水行末すいぎょうまつ・雲来末うんらいまつ・風来末ふうらいまつ、
-  441  食う寝るところに住むところ、
-  442  やぶらこうじのぶらこうじ、
-  443  パイポ・パイポ・パイポのシューリンガン、
-  444  シューリンガンのグーリンダイ、
-  445  グーリンダイのポンポコピーのポンポコナの、
-  446  長久命ちょうきゅうめいの長助' | aplay
-  447  pinout
-  448  cd ..
-  449  nano 03_02_mp3.py
-  450  python3 -m compileall 03_02_mp3.py 
-  451  python3 03_02_mp3.py 
-  452  cat 03_02_mp3.py 
-  453  nano 03_02_mp3.py 
-  454  python3 03_02_mp3.py 
-  455  nano 03_02_mp3.py 
-  456  python3 03_02_mp3.py 
-  457  cat 03_02_mp3.py 
-  458  nano 03_02_mp3.py 
-  459  python3 03_02_mp3.py 
-  460  nano 03_02_mp3.py 
-  461  python3 03_02_mp3.py 
-  462  nano 03_02_mp3.py 
-  463  python3 03_02_mp3.py 
-  464  nano 03_02_mp3.py 
-  465  python3 03_02_mp3.py 
-  466  cat 03_02_mp3.py 
-  467  nano 03_02_mp3.py 
-  468  python3 03_02_mp3.py 
-  469  nano 03_02_mp3.py 
-  470  python3 03_02_mp3.py 
-  471  ./AquesTalkPi -p '寿限無じゅげむ、寿限無じゅげむ、
-  472  五劫ごこうのすりきれ、
-  473  海砂利かいじゃり水魚すいぎょの、
-  474  水行末すいぎょうまつ・雲来末うんらいまつ・風来末ふうらいまつ、
-  475  食う寝るところに住むところ、
-  476  やぶらこうじのぶらこうじ、
-  477  パイポ・パイポ・パイポのシューリンガン、
-  478  シューリンガンのグーリンダイ、
-  479  グーリンダイのポンポコピーのポンポコナの、
-  480  長久命ちょうきゅうめいの長助' | aplay
-  481  ls
-  482  cd aquestalkpi
-  483  ls
-  484  ./AquesTalkPi -p '寿限無じゅげむ、寿限無じゅげむ、
-  485  五劫ごこうのすりきれ、
-  486  海砂利かいじゃり水魚すいぎょの、
-  487  水行末すいぎょうまつ・雲来末うんらいまつ・風来末ふうらいまつ、
-  488  食う寝るところに住むところ、
-  489  やぶらこうじのぶらこうじ、
-  490  パイポ・パイポ・パイポのシューリンガン、
-  491  シューリンガンのグーリンダイ、
-  492  グーリンダイのポンポコピーのポンポコナの、
-  493  長久命ちょうきゅうめいの長助' | aplay
-  494  python3 03_02_mp3.py 
-  495  cd ..
-  496  python3 03_02_mp3.py 
-  497  alsamixer 
-  498  python3 03_02_mp3.py 
-  499  sudo poweroff
-  500  lsusb
-  501  sudo apt-get install guvcview
-  502  sudo apt-get install fswebcam
-  503  fswebcam image.jpg
-  504  fswebcam -r 1280x720 --no-banner image.jpg
-  505  sudo reboot
-  506  fswebcam -r 1280x720 --no-banner image.jpg
-  507  fswebcam -r 640x480 --no-banner image.jpg
-  508  cd ./share
-  509  fswebcam -r 640x480 --no-banner image.jpg
-  510  ls
-  511  sudo apt-file aquestalkpi
-  512  sudo apt-file sshd
-  513  cp 03_01_camera.py 03_01_camera_org.py
-  514  ls
-  515  nano 03_01_camera.py 
-  516  python3 03_01_camera.py 
-  517  nano 03_01_camera.py 
-  518  python3 03_01_camera.py 
-  519  cat 03_01_camera.py 
-  520  nano 03_01_camera.py 
-  521  touch 04_06_quiz.py
-  522  ls
-  523  python3 04_06_quiz.py 
-  524  cat 04_06_quiz.py 
-  525  python3 04_06_quiz.py 
-  526  poweroff
-  527  sudo poweroff
-  528  ls
-  529  cd ./share
-  530  python3 04_06_quiz.py 
   531  aplay -l
   532  python3 04_06_quiz.py 
   533  alsamixer
@@ -906,100 +708,293 @@
  1238  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video2 -r 1920x1080 -fps 30 -q 10' 
  1239  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video3 -r 1920x1080 -fps 30 -q 10' 
  1240  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video2 -r 640x480 -fps 30 -q 10'
- 1241* 
- 1242  fg
- 1243  ls -l /dev/video*
- 1244  rpicam-hello --list-cameras
- 1245  v4l2-ctl --list-devices
- 1246  cd ~/templates/
- 1247  sudo python3 04_02_scamera.py 
+ 1241  fg
+ 1242  ls -l /dev/video*
+ 1243  rpicam-hello --list-cameras
+ 1244  v4l2-ctl --list-devices
+ 1245  cd ~/templates/
+ 1246  sudo python3 04_02_scamera.py 
+ 1247  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
  1248  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
-
-
- 1249  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental && ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
-
-
- 1250  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental
- 1251  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
-
- 1252  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10'
- 1253  sudo killall mjpg_streamer
- 1254  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10'
- 1255  cd
- 1256  rpicam-vid --help
- 1257  rpicam-vid --cmaera 0
- 1258  rpicam-vid --camera 0
- 1259  fg
- 1260  bg
- 1261  rpicam-vid --camera 0
- 1262  sudo python3 04_02_scamera.py 
- 1263  cd ~/templates/
- 1264  sudo python3 04_02_scamera.py 
- 1265  v4l2-ctl
- 1266  cd
- 1267  cd /share
- 1268  cd share
- 1269  git clone https://github.com/AmbientDataInc/ambient-python-lib.git
- 1270  updatedb
- 1271  sudo updatedb
- 1272  locate ambient
- 1273  cd ambient-python-lib/
- 1274  ls
- 1275  cat README.md 
- 1276  ls
- 1277  cat amibient.py
- 1278  sudo nano 20260616_test_ambient.py
- 1279  python3 20260616_test_ambient.py 
- 1280  sudo nano 20260616_test_ambient.py
- 1281  python3 20260616_test_ambient.py 
- 1282  sudo nano 20260616_test_ambient.py
- 1283  python3 20260616_test_ambient.py 
- 1284  sudo nano 20260616_test_ambient.py
- 1285  python3 20260616_test_ambient.py 
- 1286  sudo nano 20260616_tes2_ambient_grove
- 1287  mv 20260616_tes2_ambient_grove 20260616_test2_ambient_grove.py
- 1288  python3 20260616_test2_ambient_grove.py 
- 1289  sudo nano 20260616_test2_ambient_grove.py 
- 1290  python3 20260616_test2_ambient_grove.py 
- 1291  sudo nano 20260616_test2_ambient_grove.py 
- 1292  python3 20260616_test2_ambient_grove.py 
- 1293  sudo nano 20260616_test2_ambient_grove.py 
- 1294  python3 20260616_test2_ambient_grove.py 
- 1295  sudo nano 20260616_test2_ambient_grove.py 
- 1296  python3 20260616_test2_ambient_grove.py 
- 1297  cat 20260616_test2_ambient_grove.py 
- 1298  sudo nano 20260616_test2_ambient_grove.py 
- 1299  python3 20260616_test2_ambient_grove.py 
- 1300  sudo nano 20260616_test2_ambient_grove.py 
- 1301  python3 20260616_test2_ambient_grove.py 
- 1302  cat 20260616_test2_ambient_grove.py 
- 1303  cd ~/share
- 1304  cd
- 1305  pip install adafruit-circuitpython-ahtx0
- 1306  pip install adafruit-circuitpython-ahtx0 --break-system-packages   
- 1307  python3 20260616_test2_ambient_grove.py 
- 1308  cd ~/share
- 1309  python3 20260616_test2_ambient_grove.py 
- 1310  ls
- 1311  cd ~/share/ambient-python-lib
- 1312  python3 20260616_test2_ambient_grove.py 
- 1313  updatedb
- 1314  sudo updatedb
- 1315  python3 20260616_test2_ambient_grove.py 
- 1316  sudo nano 20260616_test2_ambient_grove.py 
- 1317  python3 20260616_test2_ambient_grove.py 
- 1318  sudo nano 20260616_test2_ambient_grove.py 
- 1319  python3 20260616_test2_ambient_grove.py 
- 1320  cd 
- 1321  sudo nano /etc/samba/smb.conf 
- 1322  history | grep ch
- 1323  sudo chown -R pi:pi ~/share/ambient-python-lib
- 1324  cd ~/share/ambient-python-lib/
- 1325  python3 20260616_test2_ambient_grove.py 
- 1326  sudo nano 20260616_test2_ambient_grove.py 
- 1327  python3 20260616_test2_ambient_grove.py 
- 1328  cd
- 1329  hsitory | grep his
- 1330  history | grep his
- 1331  cd ~/share
- 1332  history > my_command_history.txt 
+ 1249  cd /home/pi/mjpg-streamer/mjpg-streamer-experimental
+ 1250  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10
+ 1251  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10'
+ 1252  sudo killall mjpg_streamer
+ 1253  ./mjpg_streamer -o './output_http.so -w ./www -p 8081' -i './input_uvc.so -d /dev/video0 -r 640x480 -fps 30 -q 10'
+ 1254  cd
+ 1255  rpicam-vid --help
+ 1256  rpicam-vid --cmaera 0
+ 1257  rpicam-vid --camera 0
+ 1258  fg
+ 1259  bg
+ 1260  rpicam-vid --camera 0
+ 1261  sudo python3 04_02_scamera.py 
+ 1262  cd ~/templates/
+ 1263  sudo python3 04_02_scamera.py 
+ 1264  v4l2-ctl
+ 1265  cd
+ 1266  cd /share
+ 1267  cd share
+ 1268  git clone https://github.com/AmbientDataInc/ambient-python-lib.git
+ 1269  updatedb
+ 1270  sudo updatedb
+ 1271  locate ambient
+ 1272  cd ambient-python-lib/
+ 1273  ls
+ 1274  cat README.md 
+ 1275  ls
+ 1276  cat amibient.py
+ 1277  sudo nano 20260616_test_ambient.py
+ 1278  python3 20260616_test_ambient.py 
+ 1279  sudo nano 20260616_test_ambient.py
+ 1280  python3 20260616_test_ambient.py 
+ 1281  sudo nano 20260616_test_ambient.py
+ 1282  python3 20260616_test_ambient.py 
+ 1283  sudo nano 20260616_test_ambient.py
+ 1284  python3 20260616_test_ambient.py 
+ 1285  sudo nano 20260616_tes2_ambient_grove
+ 1286  mv 20260616_tes2_ambient_grove 20260616_test2_ambient_grove.py
+ 1287  python3 20260616_test2_ambient_grove.py 
+ 1288  sudo nano 20260616_test2_ambient_grove.py 
+ 1289  python3 20260616_test2_ambient_grove.py 
+ 1290  sudo nano 20260616_test2_ambient_grove.py 
+ 1291  python3 20260616_test2_ambient_grove.py 
+ 1292  sudo nano 20260616_test2_ambient_grove.py 
+ 1293  python3 20260616_test2_ambient_grove.py 
+ 1294  sudo nano 20260616_test2_ambient_grove.py 
+ 1295  python3 20260616_test2_ambient_grove.py 
+ 1296  cat 20260616_test2_ambient_grove.py 
+ 1297  sudo nano 20260616_test2_ambient_grove.py 
+ 1298  python3 20260616_test2_ambient_grove.py 
+ 1299  sudo nano 20260616_test2_ambient_grove.py 
+ 1300  python3 20260616_test2_ambient_grove.py 
+ 1301  cat 20260616_test2_ambient_grove.py 
+ 1302  cd ~/share
+ 1303  cd
+ 1304  pip install adafruit-circuitpython-ahtx0
+ 1305  pip install adafruit-circuitpython-ahtx0 --break-system-packages   
+ 1306  python3 20260616_test2_ambient_grove.py 
+ 1307  cd ~/share
+ 1308  python3 20260616_test2_ambient_grove.py 
+ 1309  ls
+ 1310  cd ~/share/ambient-python-lib
+ 1311  python3 20260616_test2_ambient_grove.py 
+ 1312  updatedb
+ 1313  sudo updatedb
+ 1314  python3 20260616_test2_ambient_grove.py 
+ 1315  sudo nano 20260616_test2_ambient_grove.py 
+ 1316  python3 20260616_test2_ambient_grove.py 
+ 1317  sudo nano 20260616_test2_ambient_grove.py 
+ 1318  python3 20260616_test2_ambient_grove.py 
+ 1319  cd 
+ 1320  sudo nano /etc/samba/smb.conf 
+ 1321  history | grep ch
+ 1322  sudo chown -R pi:pi ~/share/ambient-python-lib
+ 1323  cd ~/share/ambient-python-lib/
+ 1324  python3 20260616_test2_ambient_grove.py 
+ 1325  sudo nano 20260616_test2_ambient_grove.py 
+ 1326  python3 20260616_test2_ambient_grove.py 
+ 1327  cd
+ 1328  hsitory | grep his
+ 1329  history | grep his
+ 1330  cd ~/share
+ 1331  history > my_command_history.txt 
+ 1332  sudo systemctl isolate poweroff.target 
+ 1333  locate beautifulsoup
+ 1334  pip3 install beauttifulsoup4 --break-system-packages
+ 1335  pip3 install beautifulsoup4 --break-system-packages
+ 1336  pip3 install requests  --break-system-packages
+ 1337  locate requests
+ 1338  ls 
+ 1339  cd ~/share/
+ 1340  mkdir Bsoup_test
+ 1341  cd Bsoup_test/
+ 1342  nano 20260618_bs_test.py
+ 1343  python3 20260618_bs_test.py 
+ 1344  nano 20260618_bs_test.py
+ 1345  python3 20260618_bs_test.py 
+ 1346  nano 20260618_bs_test.py
+ 1347  python3 20260618_bs_test.py 
+ 1348  nano 20260618_bs_test.py
+ 1349  python3 20260618_bs_test.py 
+ 1350  nano 20260618_bs_test.py
+ 1351  python3 20260618_bs_test.py 
+ 1352  nano 20260618_bs_test.py
+ 1353  python3 20260618_bs_test.py 
+ 1354  nano 20260618_bs_test.py
+ 1355  python3 20260618_bs_test.py 
+ 1356  nano 20260618_bs_test.py
+ 1357  python3 20260618_bs_test.py 
+ 1358  nano 20260618_bs_test.py
+ 1359  y
+ 1360  python3 20260618_bs_test.py 
+ 1361  nano 20260618_bs_test.py
+ 1362  python3 20260618_bs_test.py 
+ 1363  nano 20260618_bs_test.py
+ 1364  python3 20260618_bs_test.py 
+ 1365  cat 20260618_bs_test.py 
+ 1366  nano 20260618_bs_test.py
+ 1367  python3 20260618_bs_test.py 
+ 1368  nano 20260618_bs_test.py
+ 1369  python3 20260618_bs_test.py 
+ 1370  nano 20260618_bs_test.py
+ 1371  python3 20260618_bs_test.py 
+ 1372  nano 20260618_bs_test.py
+ 1373  python3 20260618_bs_test.py 
+ 1374  nano 20260618_bs_test.py
+ 1375  python3 20260618_bs_test.py 
+ 1376  nano 20260618_bs_test.py
+ 1377  python3 20260618_bs_test.py 
+ 1378  nano 20260618_bs_test.py
+ 1379  python3 20260618_bs_test.py 
+ 1380  nano 20260618_bs_test.py
+ 1381  python3 20260618_bs_test.py 
+ 1382  nano 20260618_bs_test.py
+ 1383  python3 20260618_bs_test.py 
+ 1384  nano 20260618_bs_test.py
+ 1385  python3 20260618_bs_test.py 
+ 1386  cat 20260618_bs_test.py 
+ 1387  nano 20260618_bs_test.py
+ 1388  python3 20260618_bs_test.py 
+ 1389  nano 20260618_bs_test.py
+ 1390  python3 20260618_bs_test.py 
+ 1391  nano 20260618_bs_test.py
+ 1392  python3 20260618_bs_test.py 
+ 1393  pip3 install lxml --break-system-packages 
+ 1394  nano 20260618_bs_test.py
+ 1395  python3 20260618_bs_test.py 
+ 1396  nano 20260618_bs_test.py
+ 1397  cat 20260618_bs_test.py 
+ 1398  nano 20260618_bs_test.py
+ 1399  python3 20260618_bs_test.py 
+ 1400  nano 20260618_bs_test.py
+ 1401  python3 20260618_bs_test.py 
+ 1402  nano 20260618_bs_test.py
+ 1403  python3 20260618_bs_test.py 
+ 1404  nano 20260618_bs_test.py
+ 1405  python3 20260618_bs_test.py 
+ 1406  cat 20260618_bs_test.py 
+ 1407  nano 20260618_bs_test.py 
+ 1408  python3 20260618_bs_test.py 
+ 1409  nano 20260618_bs_test.py 
+ 1410  y
+ 1411  python3 20260618_bs_test.py 
+ 1412  nano 20260618_bs_test.py 
+ 1413  python3 20260618_bs_test.py 
+ 1414  nano 20260618_bs_test.py 
+ 1415  nano
+ 1416  python3 20260618_bs_test.py 
+ 1417  cat 20260618_bs_test.py 
+ 1418  nano 20260618_bs_test.py 
+ 1419  python3 20260618_bs_test.py 
+ 1420  cat 20260618_bs_test.py 
+ 1421  nano 20260618_bs_test.py 
+ 1422  python3 20260618_bs_test.py 
+ 1423  cat 2
+ 1424  cat 20260618_bs_test.py 
+ 1425  sudo systemctl isolate poweroff.target 
+ 1426  top
+ 1427  ss -tnl
+ 1428  dig google.com
+ 1429  host www.google.com
+ 1430  jobs
+ 1431  ps -ef
+ 1432  ps -aux
+ 1433  find / -name "*.conf"
+ 1434  locate *.conf
+ 1435  sudo cat /etc/sudoers
+ 1436  locate dig
+ 1437  apt-file search /usr/bin/dig
+ 1438  apt-file search /bin/dig
+ 1439  apt install bind9-dnsutils
+ 1440  sudo apt install bind9-dnsutils
+ 1441  dig google.com
+ 1442  host google.com
+ 1443  host 142.250.23.102
+ 1444  dig -x 142.250.23.102
+ 1445  pinmode
+ 1446  history | grep pin
+ 1447  pinout
+ 1448  sudo systemctl isolate poweroff.target 
+ 1449  sudo i2cdetect -y
+ 1450  sudo i2cdetect -y 1
+ 1451  sudo i2cdetect -yar 1
+ 1452  sudo i2cdetect -yar 0
+ 1453  sudo i2cdetect -yar 2
+ 1454  cd share/
+ 1455  cd development20260622~/
+ 1456  python3 20260622_moisture_sensor_test.py 
+ 1457  fg
+ 1458  python3 20260622_lightsensor_and_dht20sensor_test.py 
+ 1459  python3 20260622_watering_unit_test.py 
+ 1460  sudo systemctl isolate poweroff.target 
+ 1461  i2cdetect 1
+ 1462  cd share/
+ 1463  cd development20260622~/
+ 1464  python3 20260623_water_sensor_test.py 
+ 1465  python3 20260623_sensor_integraiton_test.py 
+ 1466  expand -t 4 20260623_integration_test.py > 20260623_integration_test_fixed.py
+ 1467  expand -t 4 20260623_sensor_integration_test.py > 20260623_sensor_integration_test_fixed.py
+ 1468  expand -t 4 20260623_sensor_integration_test.py > 20260623_sensor_integraiton_test.fixed.py
+ 1469  ls
+ 1470  expand -t 4 20260623_sensor_integration_test.py > 20260623_sensor_integration_test.fixed.py
+ 1471  python3 20260623_sensor_integration_test.fixed.py 
+ 1472  mkdir sensor_log
+ 1473  ls
+ 1474  python3 20260623_write_sensor_log_test.py 
+ 1475  expand -t 4 20260623_write_sensor_log_test.py 20260623_write_sensor_log_test.py 
+ 1476  python3 20260623_write_sensor_log_test.py 
+ 1477  sudo systemctl isolate poweroff.target 
+ 1478  history | grep camera
+ 1479  rpicam-hello --list
+ 1480  locate opencv
+ 1481  apt-file search opencv
+ 1482  history | grep file
+ 1483  apt-file search python3-opencv
+ 1484  sudo apt install -y python3-opencv
+ 1485  rpicam-hello --list
+ 1486  cd share/
+ 1487  makdir opencv_practice
+ 1488  mkdir opencv_practice
+ 1489  cd opencv_practice/
+ 1490  touch 20260625_rpi_cam.py
+ 1491  history | grep -t
+ 1492  history | grep 4
+ 1493  expand -t 4 20260625_rpi_cam.py 20260625_rpi_cam.py 
+ 1494  python3 20260625_rpi_cam.py 
+ 1495  expand -t 4 20260625_rpi_cam.py 20260625_rpi_cam.py 
+ 1496  python3 20260625_rpi_cam.py 
+ 1497  python3 -m py_compile
+ 1498  python3 -m py_compile 20260625_rpi_cam.py 
+ 1499  pip3 install flake8 --break-system-packages 
+ 1500  black 20260625_rpi_cam.py 
+ 1501  python3 -m pydoc cv2 > cv2_help.text
+ 1502  updatedb
+ 1503  sudo updatedb
+ 1504  black 20260625_rpi_cam.py 
+ 1505  pip3 install black --break-system-packages 
+ 1506  black 20260625_rpi_cam.py 
+ 1507  python3 20260625_rpi_cam.py 
+ 1508  i2cdetect -y 1
+ 1509  export DISPLAY = 0
+ 1510  export DISPLAY =: 0
+ 1511  export DISPLAY=:0
+ 1512  i2cdetect -y 1
+ 1513  python3 20260625_rpi_cam.py 
+ 1514  cp 20260625_rpi_cam.py 20260625_rpi_cam_gray.py 
+ 1515  black 20260625_rpi_cam_gray.py 
+ 1516  python3 -m compileall 20260625_rpi_cam_gray.py 
+ 1517  expand -t 4 20260625_rpi_cam_gray.py 20260625_rpi_cam_gray.py 
+ 1518  black 20260625_rpi_cam_gray.py 
+ 1519  python3 20260625_rpi_cam_gray.py 
+ 1520  expand -t 4 20260625_rpi_cam_gray.py 20260625_rpi_cam_gray.py 
+ 1521  black 20260625_rpi_cam_gray.py 
+ 1522  python3 -m compileall 20260625_rpi_cam_gray.py 
+ 1523  black 20260625_rpi_cam_gray.py 
+ 1524  python3 -m compileall 20260625_rpi_cam_gray.py 
+ 1525  python3 20260625_rpi_cam_gray.py 
+ 1526  history | grep history
+ 1527  cd
+ 1528  cd share/
+ 1529  ls
+ 1530  history > my_command_history.txt 
