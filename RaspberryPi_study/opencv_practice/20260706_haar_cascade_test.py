@@ -26,8 +26,8 @@ while True:
 	# 顔の枠を描画
 	for (x, y, w, h) in faces:
 		cv2.rectangle(frame, (x, y), (x+w, y+h), (0,255,0), 2)
-		cv2.imshow("Face Detection", frame)
-		# q で終了
-		if cv2.waitKey(1) & 0xFF == ord('q'):
-			break
+	cv2.imshow("Face Detection", frame)
+	# q で終了
+	if cv2.waitKey(1) & 0xFF == ord('q'):
+		break
 cv2.destroyAllWindows(); cam.stop()
