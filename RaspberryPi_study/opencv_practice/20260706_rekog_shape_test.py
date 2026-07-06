@@ -21,10 +21,10 @@ def classify_shape(cnt):
 	elif v==4:
 		x,y,w,h = cv2.boundingRect(approx)
 		aspect = w/float(h)
-		name = "Square" if 0.90<=asepect<=1.10 else "Rectangle"
+		name = "Square" if 0.90<=aspect<=1.10 else "Rectangle"
 	else:
 		circ = (4.0*np.pi*area/(peri*peri)) if peri>0 else 0 #1に近い程円
-		name = "Circle" if cric >0.80 else "Polygon"
+		name = "Circle" if circ >0.80 else "Polygon"
 	return name, approx
 	
 def main():
@@ -61,7 +61,7 @@ def main():
 		cv2.drawContours(vis, contours, -1, (0,0,255), 2)
 		cv2.putText(
 			vis, f'Contours:{len(contours)}',(10, 28), 
-			cv2.FONT_HIRSHY_SIMPLEX, 0.8, (0, 200, 255), 2
+			cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 200, 255), 2
 		)
 		for c in contours:
 			name, approx = classify_shape(c)
@@ -69,7 +69,7 @@ def main():
 			counts[name] = counts.get(name, 0) + 1
 			cv2.drawContours(vis, [approx], -1, (0,0,255), 2) #赤：輪郭
 			x,y,w,h = cv2.boundingRect(approx)
-			cv2.putText(vis, name, (x,y,-6), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,50,255), 2)
+			cv2.putText(vis, name, (x,y-6), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,50,255), 2)
 		
 		#集計表示
 		summary = f"Tri:{counts['Triangle']} Sq:{counts['Square']} Rect:{counts['Rectangle']}\
