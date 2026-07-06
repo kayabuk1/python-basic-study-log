@@ -55,8 +55,10 @@ except:
 
 while True:
 	frame = cv2.cvtColor(cam.capture_array(), cv2.COLOR_RGB2BGR)
-	#●↑cvtとは何の略？→convertの略。cvtColor()は色変換専用メソッド。
+	#●↑cvtとは何の略？→ConVerTの略。cvtColor()は色変換専用メソッド。
 	#●arrayと配列になっているのは、画像はrgbの数値配列ということ？
+	#⇒ｺﾝﾋﾟｭｰﾀにとって画像は、画素pixelの明るさ(0~255)の数値が、縦×横×色のブロック状に並んだ数字の配列Numpyにすぎない。
+	#  caputure_array()はカメラｾﾝｻｰから入って来た光の信号をpythonが計算可能な数字の配列データとして取得する命令。
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	#↑Haar Cascadesは明暗のｺﾝﾄﾗｽﾄでのみ顔を判断するｱﾙｺﾞﾘｽﾞﾑなので色は不要。
 	
@@ -67,17 +69,20 @@ while True:
 		gray,
 		scaleFactor=1.2, # 小さいほど精度↑/計算↑
 		#●↑scaleFactorは翻訳するとどんな意味？
+		#⇒Factorには要因以外に、倍率の意味もある。＝縮小倍率のこと。画像判定モデルは決まった大きさの画像しか判定出来ない。
+		#  その為、画像を何度も縮小しながら顔を探す処理を行う。1.2は20%縮小しながら探せという設定値。
 		minNeighbors=5, # 誤検出を抑える（大きいほど厳しい）
 		#●↑なぜNeighborsが誤検出に意味なの？
+		#⇒Neighborsには近所以外に、周辺という意味がある。画像判定をする際は、少しずつ枠をずらしながら何度も判定をする。
+		#  本物の顔なら枠を少しずらしても顔と判定される。枠ずらし連続5回で顔と判定されれば顔として取得する設定。
 		minSize=(30, 30) # 最小サイズ（遠くの顔→小さく）
 	)
 	
 	# 顔の枠を描画
 	for (x, y, w, h) in faces:
 		cv2.rectangle(frame, (x, y), (x+w, y+h), (0,255,0), 2)
-		#↑見つかった顔の情報が、[x座標,y座標,幅,高さ]というリスト配列の形で
+		#↑見つかった顔の情報が、[x座標,y座標(画像のどこに顔があるか),幅,高さ]というリスト配列の形で
 		#格納される。誰もいなければ空のリストになる。
-		#●なぜ座標情報も必要なの？
 	cv2.imshow("Face Detection", frame)
 	# q で終了
 	if cv2.waitKey(1) & 0xFF == ord('q'):
