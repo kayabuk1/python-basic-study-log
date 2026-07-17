@@ -1,0 +1,70 @@
+ネットカフェにおけるRaspberry Piへのクラウド経由GUI遠隔操作を可能にしてコマンド練習が出来るようにしたかった。
+
+## 1. 概要と目的
+本レポートは、ソフトウェアのインストール制限やローカルネットワークの通信制限（プライバシーセパレーター等）が敷かれている環境（例：ネットカフェ等）において、手元のスマートフォンとRaspberry Pi 4Bを組み合わせ、外部PCのブラウザからセキュアにGUI環境（デスクトップ）へアクセスするためにやったことの記録です。
+
+## 2. 実行環境と使用機材
+* **ターゲット端末**: Raspberry Pi 4B rev 1.5 (4 GB) / Raspberry Pi OS 13 (Trixie) aarch64
+* **踏み台端末**: Androidスマートフォン (Termuxアプリを使用)
+* **操作用クライアント**: ネットカフェのWindows PC (Webブラウザのみ使用)
+* **ネットワーク配管**: スマートフォンのUSBテザリングによる独立ローカルLAN、およびインターネット通信
+
+### フェーズ1：USBテザリング
+ネットカフェ環境では、ルーターのプライバシーセパレーターにより端末間の直接通信（SSH/VNC）が遮断されていた？為、
+スマホとラズパイをUSBテザリングでの接続を実施。
+
+### フェーズ2：ネットワーク層の探索（Android OS深淵部からのIPアドレス特定）
+USBテザリング出来たものの、Androidの設定画面UIや一般的なネットワークスキャナアプリ（Fing等）では、USB側に割り当てられたIPアドレスが非表示されていて分からなかった。
+ラズパイへSSH接続するためのIPアドレスを探すために、ターミナルアプリ「Termux」をAndroidにいれて、ネット情報をスキャンしてみた。
+
+#### 2.1 権限の壁（Permission denied）
+```bash
+~ $ arp -a
+/proc/net/arp: Permission denied
+~ $ sudo arp -a
+No 'su' binary found
+最初、ARPテーブルからMACアドレスとIPの紐付けを見ようとしたが、Android OSの強力なセキュリティ制限（非root端末における /proc/net/arp へのアクセス拒否）によりブロックされた。
+2.2 自分のインターフェース情報の確認（ifconfig）
+どうにも詰まってしまったが、自身のネットワークインターフェースからUSBテザリング空間のサブネットが分かりそうだと思い直して、net-tools パッケージを導入し、ifconfig コマンドを実行。
+~ $ ifconfig
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.70.X.X  netmask 255.0.0.0  ... (※ネットカフェのWi-Fi)
+
+rndis0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.XXX.YYY  netmask 255.255.255.0 ... (※USBテザリングの空間)
+このログから、USBネットワークが rndis0 インターフェースであり、サブネット空間が 192.168.XXX.0/24 であるというのが分かった。
+2.3 nmapで（ラズパイ）を探す
+分かったUSB空間（256個のIPアドレス）に対し、ネットワークを探すために nmap を使ってSSHの22番ポートを指定してスキャン。
+~ $ nmap -p 22 192.168.XXX.0/24
+Nmap scan report for 192.168.XXX.ZZZ
+Host is up (0.0011s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+これにより、やっとラズパイの座標（192.168.XXX.ZZZ）が判明した。
+フェーズ3：SSH接続
+特定したIPアドレスに対して、TermuxからSSHコマンドを打ち込み、ラズパイのターミナルへ接続した。
+~ $ ssh [USERNAME]@192.168.XXX.ZZZ
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.XXX.ZZZ' (ED25519) to the list of known hosts.
+[USERNAME]@192.168.XXX.ZZZ's password: [MASKED_PASSWORD]
+※初回の接続（ホスト公開鍵の known_hosts への登録）を正常に完了した。
+フェーズ4：クラウドアーキテクチャの起爆（Raspberry Pi Connect）
+ネットカフェのPCにはVNC Viewer等をインストールできないため、WebブラウザのみでGUI操作を可能にするクラウドベース「Raspberry Pi Connect」を起動させた。
+4.1 起動と認証URL
+[USERNAME]@raspberrypi:~ $ rpi-connect signin
+✗ Raspberry Pi Connect is not running, run rpi-connect on
+[USERNAME]@raspberrypi:~ $ rpi-connect on
+✓ Raspberry Pi Connect started
+[USERNAME]@raspberrypi:~ $ rpi-connect signin
+Complete sign in by visiting https://connect.raspberrypi.com/verify/****-****
+⣟ Waiting for a response…
+サービスが停止していたため、rpi-connect on でサービスを起動させてから、公式サーバーとの紐付け用認証URLを取得した。
+4.2 ネットカフェPCからの認証
+ネットカフェPCのブラウザから上記URLにアクセスし、Raspberry Pi ID（[MASKED_EMAIL]@gmail.com）でサインインし、デバイスの紐付けを許可（Allow）した。
+✓ Signed in
+ラズパイ側のターミナルに上記の完了ログが出力された瞬間、クラウドサーバーとの暗号化トンネルで出来た。
+その後、ブラウザのポータルサイトから「Connect via screen」を実行することで、ネットカフェのPC上にラズパイのフルサイズGUIデスクトップを出すことが出来た。
+4. まとめ
+物理層の大事さ: ネットワーク機器によるソフトウェア的な通信遮断環境下において、USBケーブルによる直接通信（テザリング）が一番手軽で強かった......。
+OS制限: Androidのカーネル仕様（権限エラー）に阻まれても、ifconfigとnmapを組み合わせIPアドレスは判明する
+クラウド管理: VNCのようにローカルIPに依存せず、Raspberry Pi Connectを活用することで、アウトバウンド（外向け）のWeb通信が通る環境であれば、ネカフェPCからでもブラウザからラズパイに接続する出来ることが分かった。
