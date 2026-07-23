@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": 139.9833,
+        "lat": 35.6931
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "晴天",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 35.7,
+        "feels_like": 41.95,
+        "temp_min": 35.7,
+        "temp_max": 36.78,
+        "pressure": 1006,
+        "humidity": 49,
+        "sea_level": 1006,
+        "grnd_level": 1005
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.39,
+        "deg": 86,
+        "gust": 2.45
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1784773962,
+    "sys": {
+        "type": 2,
+        "id": 60940,
+        "country": "JP",
+        "sunrise": 1784749238,
+        "sunset": 1784800325
+    },
+    "timezone": 32400,
+    "id": 1863905,
+    "name": "船橋市",
+    "cod": 200
+}
